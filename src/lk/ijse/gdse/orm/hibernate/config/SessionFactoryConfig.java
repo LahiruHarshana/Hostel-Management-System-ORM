@@ -10,6 +10,7 @@ public class SessionFactoryConfig {
 
     private SessionFactoryConfig(){
         sessionFactory = new Configuration().configure()
-                .addAnnotatedClass(Student.class).buildSessionFactory();
+                .addAnnotatedClass(Student.class)
+                .buildSessionFactory();
     }
 }
