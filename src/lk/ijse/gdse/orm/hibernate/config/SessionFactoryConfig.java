@@ -13,4 +13,5 @@ public class SessionFactoryConfig {
                 .addAnnotatedClass(Student.class)
                 .buildSessionFactory();
     }
+    public
 }
