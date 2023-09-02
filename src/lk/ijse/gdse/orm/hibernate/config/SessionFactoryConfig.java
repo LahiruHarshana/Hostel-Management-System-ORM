@@ -13,5 +13,7 @@ public class SessionFactoryConfig {
                 .addAnnotatedClass(Student.class)
                 .buildSessionFactory();
     }
-    public
+    public static SessionFactoryConfig getInstance(){
+
+    }
 }
