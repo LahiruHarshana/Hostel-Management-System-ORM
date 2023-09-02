@@ -9,6 +9,7 @@ public class SessionFactoryConfig {
     private final SessionFactory sessionFactory;
 
     private SessionFactoryConfig(){
-        sessionFactory = new Configuration().configure().addAnnotatedClass(Student.class).buildSessionFactory();
+        sessionFactory = new Configuration().configure()
+                .addAnnotatedClass(Student.class).buildSessionFactory();
     }
 }
