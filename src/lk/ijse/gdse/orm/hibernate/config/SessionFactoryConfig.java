@@ -14,6 +14,6 @@ public class SessionFactoryConfig {
                 .buildSessionFactory();
     }
     public static SessionFactoryConfig getInstance(){
-        return (null== factoryConfig) ? factoryConfig = new SessionFactoryConfig() :
+        return (null== factoryConfig) ? factoryConfig = new SessionFactoryConfig() : factoryConfig;
     }
 }
