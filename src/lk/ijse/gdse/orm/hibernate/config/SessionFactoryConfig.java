@@ -5,7 +5,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 public class SessionFactoryConfig {
-    private static SessionFactoryConfig FactoryConfig;
+    private static SessionFactoryConfig factoryConfig;
     private final SessionFactory sessionFactory;
 
     private SessionFactoryConfig(){
@@ -14,6 +14,6 @@ public class SessionFactoryConfig {
                 .buildSessionFactory();
     }
     public static SessionFactoryConfig getInstance(){
-        return(null== FactoryConfig)
+        return (null== factoryConfig) ? factoryConfig
     }
 }
