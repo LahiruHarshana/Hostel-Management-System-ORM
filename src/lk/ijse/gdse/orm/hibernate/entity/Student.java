@@ -34,4 +34,8 @@ public class Student {
         this.dob = dob;
         this.gender = gender;
     }
+
+    public String getId() {
+        return id;
+    }
 }
