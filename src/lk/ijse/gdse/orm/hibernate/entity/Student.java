@@ -74,4 +74,8 @@ public class Student {
     public void setContact_num(String contact_num) {
         this.contact_num = contact_num;
     }
+
+    public void setDob(Date dob) {
+        this.dob = dob;
+    }
 }
