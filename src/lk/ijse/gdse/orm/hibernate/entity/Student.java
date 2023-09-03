@@ -6,4 +6,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "student")
 public class Student {
+    private String id;
+    private
+
 }
