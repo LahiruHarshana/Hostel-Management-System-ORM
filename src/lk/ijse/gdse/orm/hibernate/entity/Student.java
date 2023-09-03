@@ -70,4 +70,8 @@ public class Student {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    public void setContact_num(String contact_num) {
+        this.contact_num = contact_num;
+    }
 }
