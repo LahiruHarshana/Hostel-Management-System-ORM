@@ -20,6 +20,7 @@ public class Student {
     private String contact_num;
     @Column(name = "student_dob")
     private Date dob;
+    @Column
     private String gender;
 
 }
