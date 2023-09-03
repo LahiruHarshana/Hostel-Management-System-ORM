@@ -14,6 +14,7 @@ public class Student {
     private String id;
     @Column(name = "student_name")
     private String name;
+    @Column
     private String address;
     private String contact_no;
     private Date dob;
