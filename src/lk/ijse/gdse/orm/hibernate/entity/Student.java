@@ -58,4 +58,8 @@ public class Student {
     public String getGender() {
         return gender;
     }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 }
