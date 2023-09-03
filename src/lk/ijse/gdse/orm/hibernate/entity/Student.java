@@ -66,4 +66,8 @@ public class Student {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 }
