@@ -23,4 +23,6 @@ public class Student {
     @Column(name = "student_gender")
     private String gender;
 
+    public Student() {
+    }
 }
