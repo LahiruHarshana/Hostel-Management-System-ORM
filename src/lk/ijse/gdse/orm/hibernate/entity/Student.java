@@ -7,6 +7,7 @@ import javax.persistence.Table;
 @Table(name = "student")
 public class Student {
     private String id;
-    private
+    private String name;
+
 
 }
