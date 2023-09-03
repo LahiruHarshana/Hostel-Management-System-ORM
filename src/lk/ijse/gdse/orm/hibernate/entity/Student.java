@@ -54,4 +54,8 @@ public class Student {
     public Date getDob() {
         return dob;
     }
+
+    public String getGender() {
+        return gender;
+    }
 }
