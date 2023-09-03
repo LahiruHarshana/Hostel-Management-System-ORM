@@ -12,6 +12,7 @@ public class Student {
     private String address;
     private String contact_no;
     private Date dob;
+    private String gender;
 
 
 
