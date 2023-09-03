@@ -50,4 +50,8 @@ public class Student {
     public String getContact_num() {
         return contact_num;
     }
+
+    public Date getDob() {
+        return dob;
+    }
 }
