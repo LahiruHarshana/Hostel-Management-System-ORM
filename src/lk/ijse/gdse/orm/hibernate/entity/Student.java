@@ -12,7 +12,7 @@ public class Student {
     @Id
     @Column(name = "student_id")
     private String id;
-    @Column
+    @Column(name = "student_name")
     private String name;
     private String address;
     private String contact_no;
