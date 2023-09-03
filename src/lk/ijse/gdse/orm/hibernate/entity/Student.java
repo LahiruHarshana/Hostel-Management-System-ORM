@@ -46,4 +46,8 @@ public class Student {
     public String getAddress() {
         return address;
     }
+
+    public String getContact_num() {
+        return contact_num;
+    }
 }
