@@ -1,5 +1,6 @@
 package lk.ijse.gdse.orm.hibernate.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -9,6 +10,7 @@ import java.sql.Date;
 @Table(name = "student")
 public class Student {
     @Id
+    @Column(name = "student_id")
     private String id;
     private String name;
     private String address;
