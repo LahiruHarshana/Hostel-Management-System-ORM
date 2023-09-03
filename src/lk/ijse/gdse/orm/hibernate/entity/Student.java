@@ -11,7 +11,8 @@ public class Student {
     private String name;
     private String address;
     private String contact_no;
-    private Date
+    private Date dob;
+
 
 
 
