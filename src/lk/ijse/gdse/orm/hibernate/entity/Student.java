@@ -25,4 +25,13 @@ public class Student {
 
     public Student() {
     }
+
+    public Student(String id, String name, String address, String contact_num, Date dob, String gender) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.contact_num = contact_num;
+        this.dob = dob;
+        this.gender = gender;
+    }
 }
