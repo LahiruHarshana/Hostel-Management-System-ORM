@@ -23,4 +23,11 @@ public class Room {
 
     public Room() {
     }
+
+    public Room(String id, String type, String key_money, int qty) {
+        this.id = id;
+        this.type = type;
+        this.key_money = key_money;
+        this.qty = qty;
+    }
 }
