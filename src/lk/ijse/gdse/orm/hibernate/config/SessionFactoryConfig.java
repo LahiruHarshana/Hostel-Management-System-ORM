@@ -21,6 +21,6 @@ public class SessionFactoryConfig {
     }
 
     public Session getSession(){
-        return
+        return sessionFactory
     }
 }
