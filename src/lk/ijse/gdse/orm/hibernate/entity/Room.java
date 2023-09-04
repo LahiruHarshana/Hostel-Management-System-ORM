@@ -46,4 +46,8 @@ public class Room {
     public int getQty() {
         return qty;
     }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 }
