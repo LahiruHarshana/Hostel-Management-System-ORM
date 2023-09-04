@@ -18,7 +18,7 @@ public class Room {
     @Column(name = "key_money")
     String key_money;
 
-    @Column(name = )
+    @Column(name = "qty")
     int qty;
 
 }
