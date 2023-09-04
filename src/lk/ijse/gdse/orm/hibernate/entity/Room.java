@@ -21,4 +21,6 @@ public class Room {
     @Column(name = "qty")
     int qty;
 
+    public Room() {
+    }
 }
