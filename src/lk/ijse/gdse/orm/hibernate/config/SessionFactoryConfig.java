@@ -18,4 +18,6 @@ public class SessionFactoryConfig {
     public static SessionFactoryConfig getInstance(){
         return (null== factoryConfig) ? factoryConfig = new SessionFactoryConfig() : factoryConfig;
     }
+
+    public
 }
