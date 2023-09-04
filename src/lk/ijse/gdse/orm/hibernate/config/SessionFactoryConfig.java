@@ -20,5 +20,7 @@ public class SessionFactoryConfig {
         return (null== factoryConfig) ? factoryConfig = new SessionFactoryConfig() : factoryConfig;
     }
 
-    public Session getSession()
+    public Session getSession(){
+
+    }
 }
