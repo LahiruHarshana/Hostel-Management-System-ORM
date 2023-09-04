@@ -4,7 +4,7 @@ import lk.ijse.gdse.orm.hibernate.config.SessionFactoryConfig;
 
 public class AppInitalizer {
     public static void main(String[] args) {
-        SessionFactoryConfig
+        SessionFactoryConfig.getInstance()
     }
 
 }
