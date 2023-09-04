@@ -13,7 +13,7 @@ public class Room {
     private String id;
 
 
-    @Column
+    @Column(name = )
     private String type;
 
 
