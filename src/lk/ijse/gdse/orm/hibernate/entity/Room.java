@@ -14,6 +14,7 @@ public class Room {
 
 
     @Column
+    String type;
 
 
 }
