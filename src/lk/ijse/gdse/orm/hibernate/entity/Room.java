@@ -30,4 +30,8 @@ public class Room {
         this.key_money = key_money;
         this.qty = qty;
     }
+
+    public String getId() {
+        return id;
+    }
 }
