@@ -11,7 +11,7 @@
          <children>
             <ImageView fitHeight="661.0" fitWidth="575.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 30; -fx-border-radius: 30;">
                <image>
-                  <Image url="@assests/hostel-198945%201.png" />
+                  <Image url="@assests/hostel-198945%202.png" />
                </image>
             </ImageView>
          </children></Pane>
