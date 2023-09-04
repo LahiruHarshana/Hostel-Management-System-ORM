@@ -58,4 +58,8 @@ public class Room {
     public void setKey_money(String key_money) {
         this.key_money = key_money;
     }
+
+    public void setQty(int qty) {
+        this.qty = qty;
+    }
 }
