@@ -42,4 +42,8 @@ public class Room {
     public String getKey_money() {
         return key_money;
     }
+
+    public int getQty() {
+        return qty;
+    }
 }
