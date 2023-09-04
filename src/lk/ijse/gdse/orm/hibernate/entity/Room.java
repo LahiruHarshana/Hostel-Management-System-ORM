@@ -54,4 +54,8 @@ public class Room {
     public void setType(String type) {
         this.type = type;
     }
+
+    public void setKey_money(String key_money) {
+        this.key_money = key_money;
+    }
 }
