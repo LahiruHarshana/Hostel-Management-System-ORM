@@ -12,9 +12,10 @@ public class Room {
     @Column(name = "room_type_id")
     private String id;
 
-
     @Column(name = "type")
     private String type;
+
+    String
 
 
 }
