@@ -11,15 +11,13 @@ import lk.ijse.gdse.orm.hibernate.config.SessionFactoryConfig;
 public class AppInitalizer extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage stage) throws Exception {
 
         SessionFactoryConfig.getInstance().getSession();
 
-        Image image=new Image("/img/train.png");
-        Parent parent =  FXMLLoader.load(getClass().getResource("/view/loginPage_form.fxml"));
-        stage.getIcons().add(image);
+        Parent parent =  FXMLLoader.load(getClass().getResource("/lk/ijse/gdse/orm/hibernate/view/loginPageForm.fxml"));
         stage.setScene(new Scene(parent));
-        stage.setTitle("Railway Station");
+        stage.setTitle("Hostel Management System");
         stage.centerOnScreen();
         stage.setResizable(false);
 
