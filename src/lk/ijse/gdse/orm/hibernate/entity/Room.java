@@ -7,6 +7,6 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "room")
 public class Room {
-@Column(name = "room_type")
+@Column(name = "room_type_id")
     String id;
 }
