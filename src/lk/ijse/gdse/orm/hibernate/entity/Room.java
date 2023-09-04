@@ -38,4 +38,8 @@ public class Room {
     public String getType() {
         return type;
     }
+
+    public String getKey_money() {
+        return key_money;
+    }
 }
