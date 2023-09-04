@@ -62,4 +62,14 @@ public class Room {
     public void setQty(int qty) {
         this.qty = qty;
     }
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "id='" + id + '\'' +
+                ", type='" + type + '\'' +
+                ", key_money='" + key_money + '\'' +
+                ", qty=" + qty +
+                '}';
+    }
 }
