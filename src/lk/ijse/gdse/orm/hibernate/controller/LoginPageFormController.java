@@ -1,4 +1,4 @@
 package lk.ijse.gdse.orm.hibernate.controller;
 
-public class loginPageFormController {
+public class LoginPageFormController {
 }
