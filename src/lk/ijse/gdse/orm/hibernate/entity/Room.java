@@ -15,7 +15,7 @@ public class Room {
     @Column(name = "type")
     private String type;
 
-    @Column
+    @Column(name = "key_money")
     String key_money;
 
 
