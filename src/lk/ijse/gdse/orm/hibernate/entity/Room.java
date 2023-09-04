@@ -8,5 +8,5 @@ import javax.persistence.Table;
 @Table(name = "room")
 public class Room {
 @Column(name = "room_type_id")
-    String id;
+    private String id;
 }
