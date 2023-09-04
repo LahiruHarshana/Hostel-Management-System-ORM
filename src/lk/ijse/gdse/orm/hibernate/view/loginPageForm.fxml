@@ -8,7 +8,7 @@
    <children>
       <Pane layoutX="81.0" layoutY="85.0" prefHeight="661.0" prefWidth="1119.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: red;">
          <children>
-            <ImageView fitHeight="661.0" fitWidth="575.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="661.0" fitWidth="575.0" pickOnBounds="true" preserveRatio="true" />
          </children></Pane>
    </children>
 </AnchorPane>
