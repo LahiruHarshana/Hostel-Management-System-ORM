@@ -79,6 +79,7 @@
                </font>
             </Label>
             <Line endX="15.1810302734375" layoutX="699.0" layoutY="530.0" startX="94.0" stroke="#888888" />
+            <Line endX="15.1810302734375" layoutX="709.0" layoutY="540.0" startX="94.0" stroke="#888888" />
          </children>
          <effect>
             <DropShadow height="255.0" radius="98.0975" width="139.39" />
