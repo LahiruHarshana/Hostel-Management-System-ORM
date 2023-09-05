@@ -8,4 +8,7 @@ public class SignUpFormController {
 
     @FXML
     private TextField txtName;
+
+    @FXML
+    private JFXButton btnBack;
 }
