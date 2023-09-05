@@ -50,6 +50,11 @@
             </Label>
             <TextField layoutX="707.0" layoutY="179.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
             <TextField layoutX="707.0" layoutY="319.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
+            <Label layoutX="708.0" layoutY="152.0" text="User Name" textFill="#888888">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
          </children>
          <effect>
             <DropShadow />
