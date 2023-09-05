@@ -70,7 +70,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <JFXButton layoutX="1000.0" layoutY="16.0" prefHeight="79.0" prefWidth="76.0" stylesheets="@assests/css/backButton.css" textFill="TRANSPARENT">
+            <JFXButton fx:id="btnBack" layoutX="1000.0" layoutY="16.0" onAction="#btnBackOnAction" prefHeight="79.0" prefWidth="76.0" stylesheets="@assests/css/backButton.css" textFill="TRANSPARENT">
                <graphic>
                   <ImageView fitHeight="69.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
                      <image>
