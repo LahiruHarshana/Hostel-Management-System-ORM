@@ -49,6 +49,7 @@
                </font>
             </Label>
             <TextField layoutX="722.0" layoutY="179.0" />
+            <TextField layoutX="742.0" layoutY="317.0" />
          </children>
          <effect>
             <DropShadow />
