@@ -19,4 +19,7 @@ public class SignUpFormController {
 
     @FXML
     private PasswordField txtRpswd;
+
+    @FXML
+    private JFXButton btnSignUp;
 }
