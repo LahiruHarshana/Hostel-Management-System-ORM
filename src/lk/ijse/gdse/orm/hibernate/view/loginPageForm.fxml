@@ -48,8 +48,8 @@
                   <Font size="25.0" />
                </font>
             </Label>
-            <TextField layoutX="722.0" layoutY="179.0" />
-            <TextField layoutX="742.0" layoutY="317.0" />
+            <TextField layoutX="707.0" layoutY="179.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
+            <TextField layoutX="707.0" layoutY="319.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
          </children>
          <effect>
             <DropShadow />
