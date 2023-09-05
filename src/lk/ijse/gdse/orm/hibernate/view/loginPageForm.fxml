@@ -9,7 +9,6 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="LoginPane" prefHeight="832.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.orm.hibernate.controller.LoginPageFormController">
@@ -57,7 +56,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="815.0" layoutY="523.0" text="Foget Password" textFill="#888888">
+            <Label layoutX="735.0" layoutY="523.0" text="Don't have  an account yet ?" textFill="#888888">
                <font>
                   <Font size="12.0" />
                </font>
@@ -78,8 +77,6 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Line endX="15.1810302734375" layoutX="699.0" layoutY="530.0" startX="94.0" stroke="#888888" />
-            <Line endX="15.1810302734375" layoutX="899.0" layoutY="530.0" startX="94.0" stroke="#888888" />
          </children>
          <effect>
             <DropShadow height="255.0" radius="98.0975" width="139.39" />
