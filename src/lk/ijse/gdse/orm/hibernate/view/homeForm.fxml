@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="1024.0" prefWidth="1095.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controllers.HomeFormController">
+   <children>
+      <ImageView fitHeight="1024.0" fitWidth="1095.0" layoutX="178.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assets/home%20(1).png" />
+         </image>
+      </ImageView>
+      <Button layoutX="933.0" layoutY="947.0" mnemonicParsing="false" onAction="#setingBtn" style="-fx-background-color: tranceparent;" stylesheets="@../styles/search.css" AnchorPane.bottomAnchor="29.0" AnchorPane.rightAnchor="56.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/settings%20(1)%201.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <AnchorPane fx:id="setingPane" layoutX="494.0" layoutY="89.0" prefHeight="764.0" prefWidth="545.0" AnchorPane.rightAnchor="56.0" />
+   </children>
+</AnchorPane>
