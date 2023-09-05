@@ -37,6 +37,7 @@
                   <Font name="Arial Black" size="50.0" />
                </font>
             </Label>
+            <Label layoutX="218.0" layoutY="404.0" text="Label" textFill="WHITE" />
          </children>
          <effect>
             <DropShadow />
