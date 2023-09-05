@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
@@ -71,7 +70,15 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button id="button" fx:id="btnBack" layoutX="1004.0" layoutY="45.0" mnemonicParsing="false" stylesheets="@assests/css/backButton.css" text="Button" />
+            <JFXButton layoutX="1004.0" layoutY="54.0" prefHeight="79.0" prefWidth="76.0" textFill="TRANSPARENT">
+               <graphic>
+                  <ImageView fitHeight="69.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assests/icons8-go-back-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
          </children>
       </Pane>
       <PasswordField fx:id="txtPswd" layoutX="778.0" layoutY="393.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
