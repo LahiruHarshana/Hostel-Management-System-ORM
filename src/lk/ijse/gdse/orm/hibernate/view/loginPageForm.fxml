@@ -60,7 +60,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <PasswordField layoutX="711.0" layoutY="331.0" />
+            <PasswordField layoutX="707.0" layoutY="316.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
          </children>
          <effect>
             <DropShadow />
