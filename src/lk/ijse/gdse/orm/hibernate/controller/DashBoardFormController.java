@@ -7,5 +7,7 @@ public class DashBoardFormController {
     @FXML
     private Button hmBtn;
 
+    @FXML
+    private AnchorPane root;
 
 }
