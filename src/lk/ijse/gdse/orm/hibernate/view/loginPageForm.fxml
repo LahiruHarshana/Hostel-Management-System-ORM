@@ -61,9 +61,9 @@
                </font>
             </Label>
             <PasswordField layoutX="699.0" layoutY="316.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
-            <Label layoutX="117.0" layoutY="184.0" prefHeight="74.0" prefWidth="379.0" text="Management" textFill="WHITE">
+            <Label layoutX="747.0" layoutY="98.0" prefHeight="74.0" prefWidth="191.0" text="Sign In">
                <font>
-                  <Font name="Arial Black" size="50.0" />
+                  <Font name="Arial Black" size="40.0" />
                </font>
             </Label>
          </children>
