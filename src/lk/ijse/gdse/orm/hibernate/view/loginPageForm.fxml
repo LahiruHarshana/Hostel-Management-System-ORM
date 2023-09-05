@@ -67,12 +67,12 @@
                   <Font name="Arial Black" size="40.0" />
                </font>
             </Label>
-            <JFXButton buttonType="RAISED" layoutX="759.0" layoutY="433.0" prefHeight="45.0" prefWidth="211.0" style="-fx-background-color: #162851; -fx-background-radius: 10;" text="Login" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="740.0" layoutY="449.0" prefHeight="45.0" prefWidth="211.0" style="-fx-background-color: #162851; -fx-background-radius: 10;" text="Login" textFill="WHITE">
                <font>
                   <Font size="20.0" />
                </font>
             </JFXButton>
-            <Label layoutX="699.0" layoutY="293.0" text="Password" textFill="#888888">
+            <Label layoutX="699.0" layoutY="291.0" text="Password" textFill="#888888">
                <font>
                   <Font size="18.0" />
                </font>
