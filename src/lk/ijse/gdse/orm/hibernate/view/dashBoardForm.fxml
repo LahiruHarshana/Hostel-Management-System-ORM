@@ -7,15 +7,15 @@
 
 <AnchorPane fx:id="root" prefHeight="832.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controllers.DashBoardFormController">
    <children>
-      <Button fx:id="hmBtn" layoutX="46.0" layoutY="350.0" mnemonicParsing="false" onAction="#homeBtnOnAction" prefHeight="60.0" prefWidth="299.0" stylesheets="@../styles/dashStyle.css" text="Home" AnchorPane.leftAnchor="46.0">
+      <Button fx:id="hmBtn" layoutX="46.0" layoutY="290.0" mnemonicParsing="false" onAction="#homeBtnOnAction" prefHeight="60.0" prefWidth="299.0" stylesheets="@../styles/dashStyle.css" text="Home" AnchorPane.leftAnchor="46.0">
          <graphic>
-            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@assests/icons8-home-100.png" />
                </image>
             </ImageView>
          </graphic></Button>
-      <Button layoutX="46.0" layoutY="499.0" mnemonicParsing="false" onAction="#roomsBtnOnAction" prefHeight="60.0" prefWidth="299.0" stylesheets="@../styles/dashStyle.css" text="Rooms" AnchorPane.leftAnchor="46.0">
+      <Button layoutX="46.0" layoutY="439.0" mnemonicParsing="false" onAction="#roomsBtnOnAction" prefHeight="60.0" prefWidth="299.0" stylesheets="@../styles/dashStyle.css" text="Rooms" AnchorPane.leftAnchor="46.0">
          <graphic>
             <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -23,7 +23,7 @@
                </image>
             </ImageView>
          </graphic></Button>
-      <Button layoutX="45.0" layoutY="574.0" mnemonicParsing="false" onAction="#stdBtnOnAction" prefHeight="60.0" prefWidth="299.0" stylesheets="@../styles/dashStyle.css" text="Students" AnchorPane.leftAnchor="46.0">
+      <Button layoutX="46.0" layoutY="514.0" mnemonicParsing="false" onAction="#stdBtnOnAction" prefHeight="60.0" prefWidth="299.0" stylesheets="@../styles/dashStyle.css" text="Students" AnchorPane.leftAnchor="46.0">
          <graphic>
             <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -31,7 +31,7 @@
                </image>
             </ImageView>
          </graphic></Button>
-      <Button layoutX="46.0" layoutY="424.0" mnemonicParsing="false" onAction="#reservationBtnOnAction" prefHeight="60.0" prefWidth="299.0" stylesheets="@../styles/dashStyle.css" text="Reservation" AnchorPane.leftAnchor="46.0">
+      <Button layoutX="46.0" layoutY="364.0" mnemonicParsing="false" onAction="#reservationBtnOnAction" prefHeight="60.0" prefWidth="299.0" stylesheets="@../styles/dashStyle.css" text="Reservation" AnchorPane.leftAnchor="46.0">
          <graphic>
             <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -39,7 +39,7 @@
                </image>
             </ImageView>
          </graphic></Button>
-      <AnchorPane fx:id="bodyPane" layoutX="345.0" prefHeight="832.0" prefWidth="1095.0" />
-      <Button layoutX="91.0" layoutY="894.0" mnemonicParsing="false" onAction="#logOutBtnOnAction" prefHeight="60.0" prefWidth="162.0" styleClass="logout-button" stylesheets="@../styles/logoutStyle.css" text="Log Out" />
+      <AnchorPane fx:id="bodyPane" layoutX="345.0" prefHeight="832.0" prefWidth="935.0" />
+      <Button layoutX="91.0" layoutY="735.0" mnemonicParsing="false" onAction="#logOutBtnOnAction" prefHeight="60.0" prefWidth="162.0" styleClass="logout-button" stylesheets="@../styles/logoutStyle.css" text="Log Out" />
    </children>
 </AnchorPane>
