@@ -1,5 +1,5 @@
 .button{
-    -fx-background-image: url('path/to/your/image.png');
+    -fx-background-image: url('/lk/ijse/gdse/orm/hibernate/view/assests/icons8-go-back-96.png');
     -fx-background-size: cover; /* Adjust to fit your image size */
     -fx-background-repeat: no-repeat;
 }
