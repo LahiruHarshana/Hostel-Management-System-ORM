@@ -42,6 +42,11 @@
                   <Font size="25.0" />
                </font>
             </Label>
+            <Label layoutX="170.0" layoutY="384.0" prefHeight="30.0" prefWidth="269.0" text="Management System!”" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
          </children>
          <effect>
             <DropShadow />
