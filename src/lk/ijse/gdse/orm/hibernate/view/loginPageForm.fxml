@@ -36,6 +36,6 @@
          <effect>
             <DropShadow />
          </effect></Pane>
-      <ImageView fitHeight="821.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="832.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
