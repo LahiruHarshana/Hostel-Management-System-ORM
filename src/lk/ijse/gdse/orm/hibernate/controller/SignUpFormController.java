@@ -28,4 +28,10 @@ public class SignUpFormController {
     void btnBackOnAction(ActionEvent event) {
 
     }
+
+
+    @FXML
+    void btnSignUpOnAction(ActionEvent event) {
+
+    }
 }
