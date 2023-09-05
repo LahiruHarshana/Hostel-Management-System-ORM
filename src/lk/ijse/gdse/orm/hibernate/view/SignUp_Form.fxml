@@ -53,7 +53,6 @@
                </font>
             </Label>
             <TextField fx:id="txtName" layoutX="699.0" layoutY="216.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
-            <TextField fx:id="txtName11" layoutX="699.0" layoutY="408.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
             <Label layoutX="703.0" layoutY="184.0" text="User Name" textFill="#888888">
                <font>
                   <Font size="18.0" />
