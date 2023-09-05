@@ -56,9 +56,9 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="699.0" layoutY="291.0" text="Password" textFill="#888888">
+            <Label layoutX="801.0" layoutY="523.0" text="Foget Password" textFill="#888888">
                <font>
-                  <Font size="18.0" />
+                  <Font size="12.0" />
                </font>
             </Label>
             <PasswordField layoutX="699.0" layoutY="316.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
@@ -72,6 +72,11 @@
                   <Font size="20.0" />
                </font>
             </JFXButton>
+            <Label layoutX="699.0" layoutY="293.0" text="Password" textFill="#888888">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
          </children>
          <effect>
             <DropShadow height="255.0" radius="98.0975" width="139.39" />
