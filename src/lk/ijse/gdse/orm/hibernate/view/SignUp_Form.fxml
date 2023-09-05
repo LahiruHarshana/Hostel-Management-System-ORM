@@ -15,7 +15,11 @@
       </ImageView>
       <Pane layoutX="81.0" layoutY="85.0" prefHeight="661.0" prefWidth="1119.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
-            <ImageView fitHeight="661.0" fitWidth="575.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="661.0" fitWidth="575.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/hostel-198945%202.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </children>
