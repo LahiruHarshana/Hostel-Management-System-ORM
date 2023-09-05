@@ -41,7 +41,7 @@
             </ImageView>
          </graphic></Button>
       <AnchorPane fx:id="bodyPane" layoutX="345.0" prefHeight="832.0" prefWidth="935.0" style="-fx-background-color: white;" />
-      <Button layoutX="91.0" layoutY="735.0" mnemonicParsing="false" onAction="#logOutBtnOnAction" prefHeight="60.0" prefWidth="162.0" style="-fx-background-color: #162851; -fx-background-radius: 20; -fx-border-color: white; -fx-border-radius: 18;" text="Log Out" textFill="WHITE">
+      <Button layoutX="91.0" layoutY="735.0" mnemonicParsing="false" onAction="#logOutBtnOnAction" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: #162851; -fx-background-radius: 20; -fx-border-color: white; -fx-border-radius: 18;" text="Log Out" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font></Button>
