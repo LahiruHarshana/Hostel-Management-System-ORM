@@ -68,7 +68,7 @@
             </Label>
          </children>
          <effect>
-            <DropShadow />
+            <DropShadow height="255.0" radius="98.0975" width="139.39" />
          </effect></Pane>
    </children>
 </AnchorPane>
