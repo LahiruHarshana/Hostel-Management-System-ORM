@@ -74,7 +74,7 @@
       </Pane>
       <PasswordField fx:id="txtPswd" layoutX="778.0" layoutY="393.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
       <PasswordField fx:id="txtRpswd" layoutX="778.0" layoutY="493.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
-      <JFXButton fx:id="btnSignUp" buttonType="RAISED" layoutX="820.0" layoutY="581.0" onAction="#btnLoginOnAction" prefHeight="45.0" prefWidth="211.0" style="-fx-background-color: #162851; -fx-background-radius: 10;" text="Sign Up" textFill="WHITE">
+      <JFXButton fx:id="btnSignUp" buttonType="RAISED" layoutX="820.0" layoutY="581.0" onAction="#btnSignUpOnAction" prefHeight="45.0" prefWidth="211.0" style="-fx-background-color: #162851; -fx-background-radius: 10;" text="Sign Up" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>
