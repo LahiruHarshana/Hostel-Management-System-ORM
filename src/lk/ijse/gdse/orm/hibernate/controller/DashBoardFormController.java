@@ -1,2 +1,5 @@
-package lk.ijse.gdse.orm.hibernate.controller;public class DashBoardFormController {
+package lk.ijse.gdse.orm.hibernate.controller;
+
+public class DashBoardFormController {
+
 }

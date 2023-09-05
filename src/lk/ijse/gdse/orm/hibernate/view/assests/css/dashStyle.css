@@ -16,6 +16,7 @@
 /* Button pressed style */
 .button:pressed {
     -fx-background-color: #FFFFFF;
+    /* Other styling properties on hover */
 }
 
 /* Button armed style (continuing pressed style) */
