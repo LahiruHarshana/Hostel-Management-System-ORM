@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
@@ -49,7 +50,6 @@
                </font>
             </Label>
             <TextField layoutX="707.0" layoutY="179.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
-            <TextField layoutX="707.0" layoutY="319.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
             <Label layoutX="717.0" layoutY="152.0" text="User Name" textFill="#888888">
                <font>
                   <Font size="18.0" />
@@ -60,6 +60,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
+            <PasswordField layoutX="711.0" layoutY="331.0" />
          </children>
          <effect>
             <DropShadow />
