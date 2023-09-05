@@ -47,6 +47,11 @@
                   <Font size="25.0" />
                </font>
             </Label>
+            <Label layoutX="761.0" layoutY="67.0" prefHeight="74.0" prefWidth="176.0" text="Sign Up">
+               <font>
+                  <Font name="Arial Black" size="40.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </children>
