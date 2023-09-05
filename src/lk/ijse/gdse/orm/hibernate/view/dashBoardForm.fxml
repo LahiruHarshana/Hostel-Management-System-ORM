@@ -5,18 +5,13 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="root" prefHeight="1024.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controllers.DashBoardFormController">
+<AnchorPane fx:id="root" prefHeight="1024.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controllers.DashBoardFormController">
    <children>
-      <ImageView fitHeight="1024.0" fitWidth="1440.0" layoutX="-4.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <image>
-            <Image url="@../assets/dashboard.png" />
-         </image>
-      </ImageView>
       <Button fx:id="hmBtn" layoutX="46.0" layoutY="350.0" mnemonicParsing="false" onAction="#homeBtnOnAction" prefHeight="60.0" prefWidth="299.0" stylesheets="@../styles/dashStyle.css" text="Home" AnchorPane.leftAnchor="46.0">
          <graphic>
             <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../assets/home%202.png" />
+                  <Image url="@assests/icons8-home-100.png" />
                </image>
             </ImageView>
          </graphic></Button>
@@ -24,7 +19,7 @@
          <graphic>
             <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../assets/bed%20(1)%202.png" />
+                  <Image url="@assests/icons8-bed-100.png" />
                </image>
             </ImageView>
          </graphic></Button>
@@ -32,7 +27,7 @@
          <graphic>
             <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../assets/people-together%202.png" />
+                  <Image url="@assests/icons8-students-64.png" />
                </image>
             </ImageView>
          </graphic></Button>
@@ -40,7 +35,7 @@
          <graphic>
             <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../assets/capital%202.png" />
+                  <Image url="@assests/capital%202.png" />
                </image>
             </ImageView>
          </graphic></Button>
