@@ -2,6 +2,7 @@ package lk.ijse.gdse.orm.hibernate.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
 
 public class DashBoardFormController {
     @FXML
@@ -9,5 +10,9 @@ public class DashBoardFormController {
 
     @FXML
     private AnchorPane root;
+
+    @FXML
+    private AnchorPane bodyPane;
+
 
 }
