@@ -21,5 +21,10 @@ public class DashBoardFormController {
 
     }
 
+    @FXML
+    void reservationBtnOnAction(ActionEvent event) {
+
+    }
+
 
 }
