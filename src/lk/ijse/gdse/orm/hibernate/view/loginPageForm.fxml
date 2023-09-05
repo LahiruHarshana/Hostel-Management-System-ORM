@@ -61,6 +61,11 @@
                </font>
             </Label>
             <PasswordField layoutX="699.0" layoutY="316.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
+            <Label layoutX="117.0" layoutY="184.0" prefHeight="74.0" prefWidth="379.0" text="Management" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="50.0" />
+               </font>
+            </Label>
          </children>
          <effect>
             <DropShadow />
