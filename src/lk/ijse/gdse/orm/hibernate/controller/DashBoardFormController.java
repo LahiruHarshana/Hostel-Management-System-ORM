@@ -14,5 +14,10 @@ public class DashBoardFormController {
     @FXML
     private AnchorPane bodyPane;
 
+    @FXML
+    void homeBtnOnAction(ActionEvent event) {
+
+    }
+
 
 }
