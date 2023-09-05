@@ -12,4 +12,6 @@ public class SignUpFormController {
 
     @FXML
     private JFXButton btnBack;
+    @FXML
+    private PasswordField txtPswd;
 }
