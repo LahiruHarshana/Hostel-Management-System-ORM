@@ -27,5 +27,8 @@ public class LoginPageFormController {
 
     }
 
+    @FXML
+    void btnSignUpOnAction(ActionEvent event) {
 
+    }
 }
