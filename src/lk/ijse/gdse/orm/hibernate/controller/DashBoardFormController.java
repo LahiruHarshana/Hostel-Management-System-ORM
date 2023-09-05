@@ -26,5 +26,10 @@ public class DashBoardFormController {
 
     }
 
+    @FXML
+    void roomsBtnOnAction(ActionEvent event) {
+
+    }
+
 
 }
