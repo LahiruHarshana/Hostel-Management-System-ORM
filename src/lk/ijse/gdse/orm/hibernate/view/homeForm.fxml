@@ -5,18 +5,20 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="1024.0" prefWidth="935.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controllers.HomeFormController">
+<AnchorPane prefHeight="832.0" prefWidth="1095.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controllers.HomeFormController">
    <children>
-      <ImageView fitHeight="619.0" fitWidth="988.0" layoutX="74.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="388.30950927734375" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="77.0">
+      <ImageView fitHeight="619.0" fitWidth="988.0" layoutX="74.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="377.30950927734375" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="88.0">
          <image>
             <Image url="@assests/undraw_Team_collaboration_re_ow29.png" />
          </image>
       </ImageView>
-      <Button layoutX="933.0" layoutY="947.0" mnemonicParsing="false" onAction="#setingBtn" style="-fx-background-color: tranceparent;" stylesheets="@../styles/search.css" AnchorPane.bottomAnchor="29.0" AnchorPane.rightAnchor="56.0" />
-      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="959.0" layoutY="844.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@assests/icons8-settings-100.png" />
-         </image>
-      </ImageView>
+      <Button layoutX="948.0" layoutY="845.0" mnemonicParsing="false" onAction="#setingBtn" style="-fx-background-color: tranceparent;" stylesheets="@../styles/search.css" AnchorPane.bottomAnchor="152.0" AnchorPane.rightAnchor="129.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/icons8-settings-100.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
    </children>
 </AnchorPane>
