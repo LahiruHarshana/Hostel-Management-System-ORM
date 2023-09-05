@@ -34,5 +34,10 @@ public class DashBoardFormController {
     void stdBtnOnAction(ActionEvent event) {
     }
 
+    @FXML
+    void logOutBtnOnAction(ActionEvent event) {
+
+    }
+
 
 }
