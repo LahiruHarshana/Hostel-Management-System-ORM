@@ -20,7 +20,12 @@ public class LoginPageFormController {
     private JFXButton btnLogin;
 
     @FXML
+    private JFXButton btnSignUp;
+
+    @FXML
     void btnLoginOnAction(ActionEvent event) {
 
     }
+
+
 }
