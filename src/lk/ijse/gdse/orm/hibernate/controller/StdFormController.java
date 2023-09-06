@@ -11,8 +11,6 @@ public class StdFormController {
     @FXML
     private TableColumn<?, ?> addressColm;
 
-    @FXML
-    private Line addressLine;
 
     @FXML
     private TextField addressTxt;
