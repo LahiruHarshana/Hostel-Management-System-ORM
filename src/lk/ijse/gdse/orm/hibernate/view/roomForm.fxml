@@ -39,7 +39,7 @@
       <Button fx:id="svBtn" layoutX="660.0" layoutY="314.0" mnemonicParsing="false" onAction="#svBtnOnAction" prefHeight="29.0" prefWidth="100.0" text="Save" />
       <Button fx:id="addBtn1" layoutX="598.0" layoutY="314.0" mnemonicParsing="false" onAction="#addNewBtnOnAction" prefHeight="37.0" prefWidth="53.0" text="+" />
       <JFXTextField labelFloat="true" layoutX="175.0" layoutY="124.0" promptText="Room ID " />
-      <JFXTextField labelFloat="true" layoutX="189.0" layoutY="231.0" />
+      <JFXTextField labelFloat="true" layoutX="189.0" layoutY="231.0" promptText="Key Money" />
       <JFXTextField labelFloat="true" layoutX="493.0" layoutY="137.0" promptText="Room Type" />
       <JFXTextField labelFloat="true" layoutX="493.0" layoutY="245.0" />
    </children>
