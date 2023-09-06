@@ -2,6 +2,7 @@ package lk.ijse.gdse.orm.hibernate.bo.custom.impl;
 
 
 import lk.ijse.gdse.orm.hibernate.bo.custom.UserBo;
+import lk.ijse.gdse.orm.hibernate.dao.custom.UserDAO;
 
 public class UserBoImpl implements UserBo {
     UserDAO userDAO= DAOFactory.getInstance().getDAO(DAOFactory.DAOTypes.USER);
