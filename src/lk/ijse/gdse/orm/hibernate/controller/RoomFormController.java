@@ -45,5 +45,8 @@ public class RoomFormController {
     @FXML
     private Button svBtn;
 
+    @FXML
+    private TableColumn<?, ?> typeColm;
+
 
 }
