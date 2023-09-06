@@ -66,5 +66,9 @@ public class RoomFormController {
     void upBtnOnAction(ActionEvent event) {
 
     }
+    @FXML
+    void addNewBtnOnAction(ActionEvent event) {
+
+    }
 
 }
