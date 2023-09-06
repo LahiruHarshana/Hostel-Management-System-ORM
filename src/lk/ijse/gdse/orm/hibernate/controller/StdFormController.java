@@ -44,9 +44,6 @@ public class StdFormController {
     private TableColumn<?, ?> idColm;
 
     @FXML
-    private Line idLine;
-
-    @FXML
     private TextField idTxt;
 
     @FXML
