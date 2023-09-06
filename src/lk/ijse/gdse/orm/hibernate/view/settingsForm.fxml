@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="740.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controllers.SettingsFormController">
+   <children>
+      <ImageView fitHeight="764.0" fitWidth="545.0" layoutX="143.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assets/setingForm.png" />
+         </image>
+      </ImageView>
+      <Line fx:id="oldPwLine" endX="265.0" layoutX="195.0" layoutY="338.0" startX="-120.0" />
+      <TextField fx:id="oldPwTxt" layoutX="75.0" layoutY="291.0" onAction="#oldPwTxtOnAction" prefHeight="45.0" prefWidth="386.0" style="-fx-background-color: tranceparent;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Button layoutX="198.0" layoutY="637.0" mnemonicParsing="false" onAction="#svBtnOAction" prefHeight="29.0" prefWidth="150.0" stylesheets="@../styles/style.css" text="Save">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Line fx:id="pwLine" endX="291.0" endY="1.32598876953125" layoutX="175.0" layoutY="455.0" startX="-100.0" startY="1.32598876953125" />
+      <PasswordField fx:id="pwTxt" layoutX="75.0" layoutY="411.0" onAction="#pwTxtOnAction" prefHeight="45.0" prefWidth="345.0" promptText="Password" style="-fx-background-color: tranceparent;">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="pwViewBtn" layoutX="420.0" layoutY="411.0" mnemonicParsing="false" onAction="#pwViewBtnOnAction" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: tranceparent;" stylesheets="@../styles/search.css">
+         <graphic>
+            <ImageView fx:id="viewImg" fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/hide.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Line fx:id="newPwLine" endX="291.0" endY="1.32598876953125" layoutX="175.0" layoutY="540.0" startX="-100.0" startY="1.32598876953125" />
+      <PasswordField fx:id="newPwTxt" layoutX="75.0" layoutY="496.0" onAction="#newPwTxtOnAction" prefHeight="45.0" prefWidth="345.0" promptText="Password" style="-fx-background-color: tranceparent;">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="newPwViewBtn" layoutX="420.0" layoutY="496.0" mnemonicParsing="false" onAction="#newPwViewBtnOnAction" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: tranceparent;" stylesheets="@../styles/search.css">
+         <graphic>
+            <ImageView fx:id="viewImg1" fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/hide.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
