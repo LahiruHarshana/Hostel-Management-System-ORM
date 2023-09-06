@@ -18,7 +18,7 @@
             <Font size="24.0" />
          </font>
       </TextField>
-      <Button layoutX="198.0" layoutY="637.0" mnemonicParsing="false" onAction="#svBtnOAction" prefHeight="29.0" prefWidth="150.0" stylesheets="@../styles/style.css" text="Save">
+      <Button layoutX="198.0" layoutY="637.0" mnemonicParsing="false" onAction="#svBtnOAction" prefHeight="29.0" prefWidth="150.0" stylesheets="@assests/css/style.css" text="Save">
          <font>
             <Font size="22.0" />
          </font>
