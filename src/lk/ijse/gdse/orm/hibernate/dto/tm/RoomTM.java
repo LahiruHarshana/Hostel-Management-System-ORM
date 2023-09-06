@@ -13,4 +13,7 @@ public class RoomTM {
         this.qty = qty;
         this.keyMoney = keyMoney;
     }
+
+    public RoomTM() {
+    }
 }
