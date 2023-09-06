@@ -70,4 +70,16 @@ public class StudentDTO {
     public void setGen(String gen) {
         this.gen = gen;
     }
+
+    @Override
+    public String toString() {
+        return "StudentDTO{" +
+                "sId='" + sId + '\'' +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", contact='" + contact + '\'' +
+                ", dob=" + dob +
+                ", gen='" + gen + '\'' +
+                '}';
+    }
 }
