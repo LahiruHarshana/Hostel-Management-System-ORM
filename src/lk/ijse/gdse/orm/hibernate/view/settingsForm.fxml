@@ -57,5 +57,20 @@
          <font>
             <Font size="30.0" />
          </font></Label>
+      <Label layoutX="75.0" layoutY="277.0" text="Old Password ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="370.0" text="New User Name ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="470.0" text="New Password">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
