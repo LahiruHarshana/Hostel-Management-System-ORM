@@ -9,4 +9,13 @@ public class StudentTM {
     private String contact;
     private String address;
     private String gender;
+
+    public StudentTM(String id, String name, Date dob, String contact, String address, String gender) {
+        this.id = id;
+        this.name = name;
+        this.dob = dob;
+        this.contact = contact;
+        this.address = address;
+        this.gender = gender;
+    }
 }
