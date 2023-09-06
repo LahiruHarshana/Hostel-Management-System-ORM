@@ -42,6 +42,8 @@ public class RoomFormController {
     @FXML
     private Button searchBtn;
 
+    @FXML
+    private Button svBtn;
 
 
 }
