@@ -1,6 +1,7 @@
 package lk.ijse.gdse.orm.hibernate.dao.custom.impl;
 
 import javafx.scene.control.Alert;
+import lk.ijse.gdse.orm.hibernate.config.SessionFactoryConfig;
 import lk.ijse.gdse.orm.hibernate.dao.custom.StudentDAO;
 import lk.ijse.gdse.orm.hibernate.entity.Student;
 import org.hibernate.Session;
