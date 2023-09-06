@@ -1,6 +1,7 @@
 package lk.ijse.gdse.orm.hibernate.dao.custom.impl;
 
 import lk.ijse.gdse.orm.hibernate.dao.custom.UserDAO;
+import lk.ijse.gdse.orm.hibernate.entity.User;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
