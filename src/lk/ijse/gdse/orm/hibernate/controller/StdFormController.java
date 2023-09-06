@@ -36,8 +36,6 @@ public class StdFormController {
     @FXML
     private TableColumn<?, ?> genColm;
 
-    @FXML
-    private Line genLine;
 
     @FXML
     private TextField genTxt;
