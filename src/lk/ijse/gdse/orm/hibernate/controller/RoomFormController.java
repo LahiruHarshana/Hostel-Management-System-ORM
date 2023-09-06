@@ -21,6 +21,10 @@ public class RoomFormController {
     @FXML
     private TextField keyMoneyTxt;
 
+    @FXML
+    private TableColumn<?, ?> kyMoneyColm;
+
+
 
 
 
