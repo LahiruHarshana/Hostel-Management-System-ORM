@@ -6,20 +6,16 @@
     -fx-border-radius: 20 20 20 20;
     -fx-background-radius: 20 20 20 20;
     -fx-alignment: CENTER-LEFT;
+
 }
 
-/* Button hover style */
 .button:hover {
     -fx-background-color: #FFFFFF;
 }
 
-/* Button pressed style */
 .button:pressed {
     -fx-background-color: #FFFFFF;
-    /* Other styling properties on hover */
 }
-
-/* Button armed style (continuing pressed style) */
 .button:armed {
     -fx-background-color: #FFFFFF;
 }
