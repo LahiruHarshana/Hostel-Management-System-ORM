@@ -62,4 +62,9 @@ public class RoomFormController {
 
     }
 
+    @FXML
+    void upBtnOnAction(ActionEvent event) {
+
+    }
+
 }
