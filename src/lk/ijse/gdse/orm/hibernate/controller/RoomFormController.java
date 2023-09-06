@@ -36,6 +36,8 @@ public class RoomFormController {
     @FXML
     private TextField roomIdTxt;
 
+    @FXML
+    private TextField roomTypeTxt;
 
 
 
