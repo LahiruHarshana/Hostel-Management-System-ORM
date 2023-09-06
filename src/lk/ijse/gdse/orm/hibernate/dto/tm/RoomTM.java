@@ -6,4 +6,11 @@ public class RoomTM {
     private String type;
     private int qty;
     private String keyMoney;
+
+    public RoomTM(String id, String type, int qty, String keyMoney) {
+        this.id = id;
+        this.type = type;
+        this.qty = qty;
+        this.keyMoney = keyMoney;
+    }
 }
