@@ -63,4 +63,8 @@ public class StdFormController {
 
     @FXML
     private Button upBtn;
+
+    @FXML
+    void deleteBtnOnAction(ActionEvent event) {
+    }
 }
