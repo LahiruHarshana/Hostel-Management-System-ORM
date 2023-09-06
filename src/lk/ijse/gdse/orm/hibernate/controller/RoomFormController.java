@@ -13,6 +13,8 @@ public class RoomFormController {
     @FXML
     private TableColumn<?, ?> idColm;
 
+    @FXML
+    private Line idLine;
 
 
 
