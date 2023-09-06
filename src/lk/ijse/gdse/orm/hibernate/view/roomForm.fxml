@@ -19,7 +19,7 @@
       </Text>
       <Button fx:id="searchBtn" layoutX="335.0" layoutY="118.0" mnemonicParsing="false" onAction="#searchBtnOnCtion" prefHeight="45.0" prefWidth="53.0" style="-fx-background-color: tranceparent;" stylesheets="@../styles/search.css">
          <graphic>
-            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="searchBtn" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assets/search-interface-symbol%201.png" />
                </image>
@@ -38,21 +38,21 @@
       <Button fx:id="upBtn" layoutX="699.0" layoutY="324.0" mnemonicParsing="false" onAction="#upBtnOnAction" prefHeight="29.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Update" />
       <Button fx:id="svBtn" layoutX="590.0" layoutY="324.0" mnemonicParsing="false" onAction="#svBtnOnAction" prefHeight="29.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Save" />
       <Button fx:id="addBtn1" layoutX="528.0" layoutY="324.0" mnemonicParsing="false" onAction="#addNewBtnOnAction" prefHeight="37.0" prefWidth="53.0" stylesheets="@assests/css/style.css" text="+" />
-      <JFXTextField labelFloat="true" layoutX="125.0" layoutY="124.0" promptText="Room ID ">
+      <JFXTextField fx:id="roomIdTxt" labelFloat="true" layoutX="125.0" layoutY="124.0" promptText="Room ID ">
          <font>
             <Font size="17.0" />
          </font></JFXTextField>
-      <JFXTextField labelFloat="true" layoutX="129.0" layoutY="231.0" promptText="Key Money">
+      <JFXTextField fx:id="keyMoneyTxt" labelFloat="true" layoutX="129.0" layoutY="231.0" promptText="Key Money">
          <font>
             <Font size="17.0" />
          </font>
       </JFXTextField>
-      <JFXTextField labelFloat="true" layoutX="573.0" layoutY="127.0" promptText="Room Type">
+      <JFXTextField fx:id="roomTypeTxt" labelFloat="true" layoutX="573.0" layoutY="127.0" promptText="Room Type">
          <font>
             <Font size="17.0" />
          </font>
       </JFXTextField>
-      <JFXTextField labelFloat="true" layoutX="573.0" layoutY="225.0" promptText="Qty">
+      <JFXTextField fx:id="qtyTxt" labelFloat="true" layoutX="573.0" layoutY="225.0" promptText="Qty">
          <font>
             <Font size="17.0" />
          </font>
