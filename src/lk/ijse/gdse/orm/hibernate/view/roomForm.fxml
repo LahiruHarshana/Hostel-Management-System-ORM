@@ -17,11 +17,11 @@
             <Font size="24.0" />
          </font>
       </Text>
-      <Button fx:id="searchBtn" layoutX="335.0" layoutY="118.0" mnemonicParsing="false" onAction="#searchBtnOnCtion" prefHeight="45.0" prefWidth="53.0" style="-fx-background-color: tranceparent;" stylesheets="@../styles/search.css">
+      <Button fx:id="searchBtn" layoutX="315.0" layoutY="118.0" mnemonicParsing="false" onAction="#searchBtnOnCtion" prefHeight="45.0" prefWidth="53.0" style="-fx-background-color: tranceparent;" stylesheets="@../styles/search.css">
          <graphic>
             <ImageView fx:id="searchBtn" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../assets/search-interface-symbol%201.png" />
+                  <Image url="@assests/icons8-search-64.png" />
                </image>
             </ImageView>
          </graphic>
