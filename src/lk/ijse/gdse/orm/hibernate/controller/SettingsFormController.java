@@ -3,6 +3,8 @@ package lk.ijse.gdse.orm.hibernate.controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 
 public class SettingsFormController {
     @FXML
@@ -15,8 +17,6 @@ public class SettingsFormController {
     @FXML
     private TextField oldPwTxt;
 
-    @FXML
-    private Line pwLine;
 
     @FXML
     private PasswordField pwTxt;
