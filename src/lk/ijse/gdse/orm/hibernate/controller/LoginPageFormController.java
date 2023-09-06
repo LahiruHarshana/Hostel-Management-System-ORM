@@ -6,6 +6,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import lk.ijse.gdse.orm.hibernate.controller.util.Navigation;
+import lk.ijse.gdse.orm.hibernate.controller.util.Rout;
 
 import java.io.IOException;
 
