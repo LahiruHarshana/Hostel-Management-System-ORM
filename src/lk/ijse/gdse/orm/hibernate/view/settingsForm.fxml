@@ -12,8 +12,8 @@
 
 <AnchorPane prefHeight="740.0" prefWidth="522.0" style="-fx-background-color: #648696;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controllers.SettingsFormController">
    <children>
-      <Line fx:id="oldPwLine" endX="265.0" layoutX="195.0" layoutY="338.0" startX="-120.0" />
-      <TextField fx:id="oldPwTxt" layoutX="75.0" layoutY="291.0" onAction="#oldPwTxtOnAction" prefHeight="45.0" prefWidth="386.0" style="-fx-background-color: tranceparent;">
+      <Line fx:id="oldPwLine" endX="265.0" layoutX="195.0" layoutY="358.0" startX="-120.0" />
+      <TextField fx:id="oldPwTxt" layoutX="75.0" layoutY="311.0" onAction="#oldPwTxtOnAction" prefHeight="45.0" prefWidth="386.0" style="-fx-background-color: tranceparent;">
          <font>
             <Font size="24.0" />
          </font>
@@ -53,6 +53,9 @@
             </ImageView>
          </graphic>
       </Button>
-      <Label text="Label" />
+      <Label layoutX="209.0" layoutY="28.0" text="Settings">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
    </children>
 </AnchorPane>
