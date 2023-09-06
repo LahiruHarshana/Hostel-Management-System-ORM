@@ -1,13 +1,7 @@
 package lk.ijse.gdse.orm.hibernate.bo.custom.impl;
 
-import lk.ijse.bo.custom.RoomBO;
-import lk.ijse.dao.DAOFactory;
-import lk.ijse.dao.custom.RoomDAO;
-import lk.ijse.dao.custom.StudentDAO;
-import lk.ijse.dto.RoomDTO;
-import lk.ijse.dto.StudentDTO;
-import lk.ijse.entity.Room;
-import lk.ijse.entity.Student;
+
+import lk.ijse.gdse.orm.hibernate.bo.custom.RoomBO;
 
 import java.util.ArrayList;
 import java.util.List;
