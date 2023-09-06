@@ -72,4 +72,8 @@ public class StdFormController {
     @FXML
     void upBtnOnAction(ActionEvent event) {
     }
+
+    @FXML
+    void svBtnOnAction(ActionEvent event) {
+    }
 }
