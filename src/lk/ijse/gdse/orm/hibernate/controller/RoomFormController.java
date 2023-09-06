@@ -3,8 +3,10 @@ package lk.ijse.gdse.orm.hibernate.controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
+import lk.ijse.gdse.orm.hibernate.dto.tm.RoomTM;
 
 public class RoomFormController {
     @FXML
@@ -31,6 +33,8 @@ public class RoomFormController {
     @FXML
     private TableView<RoomTM> rmTbl;
 
+    @FXML
+    private TextField roomIdTxt;
 
 
 
