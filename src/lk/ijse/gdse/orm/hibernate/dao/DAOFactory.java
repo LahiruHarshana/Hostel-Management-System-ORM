@@ -1,9 +1,7 @@
 package lk.ijse.gdse.orm.hibernate.dao;
 
-import lk.ijse.bo.custom.impl.UserBoImpl;
-import lk.ijse.dao.custom.impl.RoomDAOImpl;
-import lk.ijse.dao.custom.impl.StudentDAOImpl;
-import lk.ijse.dao.custom.impl.UserDAOImpl;
+
+import lk.ijse.gdse.orm.hibernate.dao.custom.impl.RoomDAOImpl;
 
 public class DAOFactory {
     private static DAOFactory factory;
