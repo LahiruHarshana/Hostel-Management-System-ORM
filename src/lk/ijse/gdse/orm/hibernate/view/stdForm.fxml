@@ -22,20 +22,20 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="deleteBtn" layoutX="868.0" layoutY="369.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" prefHeight="37.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Delete" />
-      <Button fx:id="upBtn" layoutX="759.0" layoutY="369.0" mnemonicParsing="false" onAction="#upBtnOnAction" prefHeight="29.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Update" />
-      <Button fx:id="svBtn" layoutX="650.0" layoutY="369.0" mnemonicParsing="false" onAction="#svBtnOnAction" prefHeight="29.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Save" />
-      <TableView fx:id="stdTbl" layoutX="39.0" layoutY="431.0" prefHeight="341.0" prefWidth="959.0" stylesheets="@assests/css/tblStyle.css">
+      <Button fx:id="deleteBtn" layoutX="808.0" layoutY="369.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" prefHeight="37.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Delete" />
+      <Button fx:id="upBtn" layoutX="699.0" layoutY="369.0" mnemonicParsing="false" onAction="#upBtnOnAction" prefHeight="29.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Update" />
+      <Button fx:id="svBtn" layoutX="590.0" layoutY="369.0" mnemonicParsing="false" onAction="#svBtnOnAction" prefHeight="29.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Save" />
+      <TableView fx:id="stdTbl" layoutX="39.0" layoutY="431.0" prefHeight="341.0" prefWidth="857.0" stylesheets="@assests/css/tblStyle.css">
          <columns>
             <TableColumn fx:id="idColm" minWidth="0.0" prefWidth="77.16960906982422" text="Student ID" />
-            <TableColumn fx:id="nameColm" prefWidth="241.8303985595703" text="Name" />
-            <TableColumn fx:id="genColm" prefWidth="74.93289184570312" text="Gender" />
-            <TableColumn fx:id="dobColm" prefWidth="173.4600830078125" text="Date Of Birth" />
-            <TableColumn fx:id="contactColm" prefWidth="173.4600830078125" text="Contact" />
-            <TableColumn fx:id="addressColm" prefWidth="214.51531982421875" text="Address" />
+            <TableColumn fx:id="nameColm" prefWidth="205.0" text="Name" />
+            <TableColumn fx:id="genColm" prefWidth="112.0" text="Gender" />
+            <TableColumn fx:id="dobColm" prefWidth="166.0" text="Date Of Birth" />
+            <TableColumn fx:id="contactColm" minWidth="0.0" prefWidth="89.0" text="Contact" />
+            <TableColumn fx:id="addressColm" prefWidth="204.84912109375" text="Address" />
          </columns>
       </TableView>
-      <Button fx:id="addBtn1" layoutX="588.0" layoutY="369.0" mnemonicParsing="false" onAction="#addNewBtnOnAction" prefHeight="37.0" prefWidth="53.0" stylesheets="@assests/css/style.css" text="+" />
+      <Button fx:id="addBtn1" layoutX="528.0" layoutY="369.0" mnemonicParsing="false" onAction="#addNewBtnOnAction" prefHeight="37.0" prefWidth="53.0" stylesheets="@assests/css/style.css" text="+" />
       <JFXTextField fx:id="idTxt" labelFloat="true" layoutX="154.0" layoutY="118.0" promptText="Student ID">
          <font>
             <Font size="18.0" />
