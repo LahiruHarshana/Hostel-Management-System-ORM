@@ -12,4 +12,7 @@ public class RoomDTO {
         this.qty = qty;
         this.keyMoney = keyMoney;
     }
+
+    public RoomDTO() {
+    }
 }
