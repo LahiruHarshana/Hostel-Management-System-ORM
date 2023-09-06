@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="832.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/hostel-198945%202%2009.04.07.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="81.0" layoutY="85.0" prefHeight="661.0" prefWidth="1119.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+         <children>
+            <ImageView fitHeight="661.0" fitWidth="575.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/hostel-198945%202.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="225.0" layoutY="123.0" prefHeight="74.0" prefWidth="198.0" text="Hostel " textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="50.0" />
+               </font>
+            </Label>
+            <Label layoutX="117.0" layoutY="184.0" prefHeight="74.0" prefWidth="379.0" text="Management" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="50.0" />
+               </font>
+            </Label>
+            <Label layoutX="203.0" layoutY="250.0" prefHeight="74.0" prefWidth="229.0" text="System" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="50.0" />
+               </font>
+            </Label>
+            <Label layoutX="178.0" layoutY="364.0" prefHeight="30.0" prefWidth="269.0" text="&quot;Welcome to our Hostel" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="190.0" layoutY="394.0" prefHeight="30.0" prefWidth="269.0" text="Management System!”" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="761.0" layoutY="67.0" prefHeight="74.0" prefWidth="176.0" text="Sign Up">
+               <font>
+                  <Font name="Arial Black" size="40.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtName" layoutX="699.0" layoutY="216.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
+            <Label layoutX="703.0" layoutY="184.0" text="User Name" textFill="#888888">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="703.0" layoutY="285.0" text="Password" textFill="#888888">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="702.0" layoutY="381.0" text="Repeat Password" textFill="#888888">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnBack" layoutX="1000.0" layoutY="16.0" onAction="#btnBackOnAction" prefHeight="79.0" prefWidth="76.0" stylesheets="@assests/css/backButton.css" textFill="TRANSPARENT">
+               <graphic>
+                  <ImageView fitHeight="69.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assests/icons8-go-back-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <PasswordField fx:id="txtPswd" layoutX="778.0" layoutY="393.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
+      <PasswordField fx:id="txtRpswd" layoutX="778.0" layoutY="493.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
+      <JFXButton fx:id="btnSignUp" buttonType="RAISED" layoutX="820.0" layoutY="581.0" onAction="#btnSignUpOnAction" prefHeight="45.0" prefWidth="211.0" style="-fx-background-color: #162851; -fx-background-radius: 10;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

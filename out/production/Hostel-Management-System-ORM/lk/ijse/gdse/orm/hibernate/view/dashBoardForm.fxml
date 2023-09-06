@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="832.0" prefWidth="1280.0" style="-fx-background-color: #648696;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.orm.hibernate.controller.DashBoardFormController">
+   <children>
+      <Button fx:id="hmBtn" layoutX="46.0" layoutY="290.0" mnemonicParsing="false" onAction="#homeBtnOnAction" prefHeight="72.0" prefWidth="264.0" stylesheets="@assests/css/dashStyle.css" text="Home" AnchorPane.leftAnchor="46.0">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/icons8-home-100.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="46.0" layoutY="449.0" mnemonicParsing="false" onAction="#roomsBtnOnAction" prefHeight="61.0" prefWidth="266.0" stylesheets="@assests/css/dashStyle.css" text="Rooms" AnchorPane.leftAnchor="46.0">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/icons8-bed-100.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="46.0" layoutY="524.0" mnemonicParsing="false" onAction="#stdBtnOnAction" prefHeight="61.0" prefWidth="267.0" stylesheets="@assests/css/dashStyle.css" text="Students" AnchorPane.leftAnchor="46.0">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/icons8-students-64.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="46.0" layoutY="374.0" mnemonicParsing="false" onAction="#reservationBtnOnAction" prefHeight="61.0" prefWidth="264.0" stylesheets="@assests/css/dashStyle.css" text="Reservation" AnchorPane.leftAnchor="46.0">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/capital%202.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <AnchorPane fx:id="bodyPane" layoutX="345.0" prefHeight="832.0" prefWidth="935.0" style="-fx-background-color: white;" />
+      <Button layoutX="91.0" layoutY="735.0" mnemonicParsing="false" onAction="#logOutBtnOnAction" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: #162851; -fx-background-radius: 20; -fx-border-color: white; -fx-border-radius: 18;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

@@ -9,10 +9,9 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="832.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.orm.hibernate.controller.LoginPageFormController">
+<AnchorPane fx:id="LoginPane" prefHeight="832.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.orm.hibernate.controller.LoginPageFormController">
    <children>
       <ImageView fitHeight="832.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -51,24 +50,24 @@
                   <Font size="25.0" />
                </font>
             </Label>
-            <TextField layoutX="699.0" layoutY="216.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
+            <TextField fx:id="txtName" layoutX="699.0" layoutY="216.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
             <Label layoutX="701.0" layoutY="192.0" text="User Name" textFill="#888888">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="815.0" layoutY="523.0" text="Foget Password" textFill="#888888">
+            <Label layoutX="735.0" layoutY="523.0" text="Don't have  an account yet ?" textFill="#888888">
                <font>
                   <Font size="12.0" />
                </font>
             </Label>
-            <PasswordField layoutX="699.0" layoutY="316.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
+            <PasswordField fx:id="txtPswd" layoutX="699.0" layoutY="316.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
             <Label layoutX="762.0" layoutY="77.0" prefHeight="74.0" prefWidth="164.0" text="Sign In">
                <font>
                   <Font name="Arial Black" size="40.0" />
                </font>
             </Label>
-            <JFXButton buttonType="RAISED" layoutX="740.0" layoutY="449.0" prefHeight="45.0" prefWidth="211.0" style="-fx-background-color: #162851; -fx-background-radius: 10;" text="Login" textFill="WHITE">
+            <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="740.0" layoutY="449.0" onAction="#btnLoginOnAction" prefHeight="45.0" prefWidth="211.0" style="-fx-background-color: #162851; -fx-background-radius: 10;" text="Login" textFill="WHITE">
                <font>
                   <Font size="20.0" />
                </font>
@@ -78,8 +77,11 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Line endX="15.1810302734375" layoutX="699.0" layoutY="530.0" startX="94.0" stroke="#888888" />
-            <Line endX="15.1810302734375" layoutX="899.0" layoutY="530.0" startX="94.0" stroke="#888888" />
+            <JFXButton fx:id="btnSignUp" layoutX="870.0" layoutY="519.0" onAction="#btnSignUpOnAction" text="Sign Up" textFill="#162851">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </JFXButton>
          </children>
          <effect>
             <DropShadow height="255.0" radius="98.0975" width="139.39" />
