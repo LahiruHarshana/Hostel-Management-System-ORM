@@ -68,4 +68,8 @@ public class StdFormController {
     @FXML
     void deleteBtnOnAction(ActionEvent event) {
     }
+
+    @FXML
+    void upBtnOnAction(ActionEvent event) {
+    }
 }
