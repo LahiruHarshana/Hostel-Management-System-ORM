@@ -8,11 +8,12 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="832.0" prefWidth="935.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controllers.StdFormController">
    <children>
-      <DatePicker fx:id="dobPicker" layoutX="226.0" layoutY="255.0" prefHeight="31.0" prefWidth="268.0" promptText="DOB" style="-fx-background-color: tranceparent;" />
-      <Button fx:id="searchBtn" layoutX="606.0" layoutY="58.0" mnemonicParsing="false" onAction="#searchBtnOnCtion" prefHeight="45.0" prefWidth="53.0" style="-fx-background-color: tranceparent;" stylesheets="@../styles/search.css">
+      <DatePicker fx:id="dobPicker" layoutX="156.0" layoutY="255.0" prefHeight="31.0" prefWidth="268.0" promptText="DOB" style="-fx-background-color: tranceparent;" />
+      <Button fx:id="searchBtn" layoutX="365.0" layoutY="121.0" mnemonicParsing="false" onAction="#searchBtnOnCtion" prefHeight="45.0" prefWidth="53.0" style="-fx-background-color: tranceparent;" stylesheets="@../styles/search.css">
          <graphic>
             <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -21,9 +22,9 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="deleteBtn" layoutX="868.0" layoutY="369.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" prefHeight="37.0" prefWidth="100.0" stylesheets="@../styles/style.css" text="Delete" />
-      <Button fx:id="upBtn" layoutX="759.0" layoutY="369.0" mnemonicParsing="false" onAction="#upBtnOnAction" prefHeight="29.0" prefWidth="100.0" stylesheets="@../styles/style.css" text="Update" />
-      <Button fx:id="svBtn" layoutX="650.0" layoutY="369.0" mnemonicParsing="false" onAction="#svBtnOnAction" prefHeight="29.0" prefWidth="100.0" stylesheets="@../styles/style.css" text="Save" />
+      <Button fx:id="deleteBtn" layoutX="868.0" layoutY="369.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" prefHeight="37.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Delete" />
+      <Button fx:id="upBtn" layoutX="759.0" layoutY="369.0" mnemonicParsing="false" onAction="#upBtnOnAction" prefHeight="29.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Update" />
+      <Button fx:id="svBtn" layoutX="650.0" layoutY="369.0" mnemonicParsing="false" onAction="#svBtnOnAction" prefHeight="29.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Save" />
       <TableView fx:id="stdTbl" layoutX="39.0" layoutY="431.0" prefHeight="341.0" prefWidth="959.0" stylesheets="@../styles/tblStyle.css">
          <columns>
             <TableColumn fx:id="idColm" minWidth="0.0" prefWidth="77.16960906982422" text="Student ID" />
@@ -34,11 +35,26 @@
             <TableColumn fx:id="addressColm" prefWidth="214.51531982421875" text="Address" />
          </columns>
       </TableView>
-      <Button fx:id="addBtn1" layoutX="588.0" layoutY="369.0" mnemonicParsing="false" onAction="#addNewBtnOnAction" prefHeight="37.0" prefWidth="53.0" stylesheets="@../styles/style.css" text="+" />
-      <JFXTextField layoutX="154.0" layoutY="118.0" />
-      <JFXTextField layoutX="195.0" layoutY="194.0" />
-      <JFXTextField layoutX="534.0" layoutY="147.0" />
-      <JFXTextField layoutX="587.0" layoutY="223.0" />
-      <JFXTextField layoutX="154.0" layoutY="327.0" />
+      <Button fx:id="addBtn1" layoutX="588.0" layoutY="369.0" mnemonicParsing="false" onAction="#addNewBtnOnAction" prefHeight="37.0" prefWidth="53.0" stylesheets="@assests/css/style.css" text="+" />
+      <JFXTextField labelFloat="true" layoutX="154.0" layoutY="118.0" promptText="Student ID">
+         <font>
+            <Font size="18.0" />
+         </font></JFXTextField>
+      <JFXTextField labelFloat="true" layoutX="155.0" layoutY="184.0" promptText="Contact Number">
+         <font>
+            <Font size="18.0" />
+         </font></JFXTextField>
+      <JFXTextField labelFloat="true" layoutX="534.0" layoutY="117.0" prefHeight="35.0" prefWidth="357.0" promptText="Name">
+         <font>
+            <Font size="18.0" />
+         </font></JFXTextField>
+      <JFXTextField labelFloat="true" layoutX="537.0" layoutY="176.0" promptText="Gender">
+         <font>
+            <Font size="18.0" />
+         </font></JFXTextField>
+      <JFXTextField labelFloat="true" layoutX="154.0" layoutY="307.0" prefHeight="35.0" prefWidth="434.0" promptText="Address">
+         <font>
+            <Font size="18.0" />
+         </font></JFXTextField>
    </children>
 </AnchorPane>
