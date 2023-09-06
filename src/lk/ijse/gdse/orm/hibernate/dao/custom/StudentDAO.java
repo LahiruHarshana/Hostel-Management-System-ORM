@@ -1,8 +1,8 @@
 package lk.ijse.gdse.orm.hibernate.dao.custom;
 
-import lk.ijse.dao.CrudDAO;
-import lk.ijse.dao.SuperDAO;
-import lk.ijse.entity.Student;
+
+import lk.ijse.gdse.orm.hibernate.dao.CrudDAO;
+import lk.ijse.gdse.orm.hibernate.entity.Student;
 
 public interface StudentDAO extends CrudDAO<Student, String> {
 }
