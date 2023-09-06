@@ -39,6 +39,8 @@ public class RoomFormController {
     @FXML
     private TextField roomTypeTxt;
 
+    @FXML
+    private Button searchBtn;
 
 
 
