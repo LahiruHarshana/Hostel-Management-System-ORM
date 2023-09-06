@@ -71,4 +71,9 @@ public class RoomFormController {
 
     }
 
+    @FXML
+    void deleteBtnOnAction(ActionEvent event) {
+
+    }
+
 }
