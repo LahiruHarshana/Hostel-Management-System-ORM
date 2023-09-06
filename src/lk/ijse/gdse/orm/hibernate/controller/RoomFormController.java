@@ -1,5 +1,6 @@
 package lk.ijse.gdse.orm.hibernate.controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -51,6 +52,9 @@ public class RoomFormController {
     @FXML
     private Button upBtn;
 
+    @FXML
+    void searchBtnOnCtion(ActionEvent event) {
 
+    }
 
 }
