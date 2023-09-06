@@ -1,5 +1,6 @@
 package lk.ijse.gdse.orm.hibernate.bo;
 
+import lk.ijse.gdse.orm.hibernate.bo.custom.impl.RoomBOImpl;
 import lk.ijse.gdse.orm.hibernate.bo.custom.impl.StudentBOImpl;
 import lk.ijse.gdse.orm.hibernate.bo.custom.impl.UserBoImpl;
 
