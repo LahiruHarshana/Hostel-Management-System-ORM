@@ -3,14 +3,17 @@ package lk.ijse.gdse.orm.hibernate.controller;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import lk.ijse.gdse.orm.hibernate.controller.util.Navigation;
 import lk.ijse.gdse.orm.hibernate.controller.util.Rout;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class DashBoardFormController {
+public class DashBoardFormController implements Initializable {
     @FXML
     private Button hmBtn;
 
@@ -64,13 +67,14 @@ public class DashBoardFormController {
         }
     }
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        loadHome();
-    }
 
     private void loadHome() {
         hmBtn.fire();
     }
 
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        loadHome();
+
+    }
 }

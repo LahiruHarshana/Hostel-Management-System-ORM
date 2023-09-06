@@ -7,6 +7,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
+import java.io.IOException;
+
 public class LoginPageFormController {
     @FXML
     private AnchorPane LoginPane;
@@ -24,6 +26,11 @@ public class LoginPageFormController {
 
     @FXML
     void btnLoginOnAction(ActionEvent event) {
+        try {
+            Navigation.navigation(Rout.DASH_BOARD,root);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 

@@ -1,0 +1,29 @@
+/* Set the background color of the table header to #090963 */
+.table-view .column-header {
+    -fx-background-color: #090963;
+}
+
+/* Set the font color of the table header to white */
+.table-view .column-header .label {
+    -fx-text-fill: white;
+}
+
+/* Make the table body transparent */
+.table-view .table-row-cell {
+    -fx-background-color: transparent;
+}
+
+/* Set the font color of the table body to black */
+.table-view .table-cell {
+    -fx-text-fill: black;
+}
+
+/* Add a shadow effect to the table */
+.table-view {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 1);
+}
+
+/* Change the row color when a row is selected to #85B7FF */
+.table-view .table-row-cell:selected {
+    -fx-background-color: #85B7FF;
+}
