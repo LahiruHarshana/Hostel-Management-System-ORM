@@ -25,7 +25,7 @@
       <Button fx:id="deleteBtn" layoutX="868.0" layoutY="369.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" prefHeight="37.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Delete" />
       <Button fx:id="upBtn" layoutX="759.0" layoutY="369.0" mnemonicParsing="false" onAction="#upBtnOnAction" prefHeight="29.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Update" />
       <Button fx:id="svBtn" layoutX="650.0" layoutY="369.0" mnemonicParsing="false" onAction="#svBtnOnAction" prefHeight="29.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Save" />
-      <TableView fx:id="stdTbl" layoutX="39.0" layoutY="431.0" prefHeight="341.0" prefWidth="959.0" stylesheets="@../styles/tblStyle.css">
+      <TableView fx:id="stdTbl" layoutX="39.0" layoutY="431.0" prefHeight="341.0" prefWidth="959.0" stylesheets="@assests/css/tblStyle.css">
          <columns>
             <TableColumn fx:id="idColm" minWidth="0.0" prefWidth="77.16960906982422" text="Student ID" />
             <TableColumn fx:id="nameColm" prefWidth="241.8303985595703" text="Name" />
