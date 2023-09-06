@@ -29,7 +29,7 @@ public class LoginPageFormController {
     @FXML
     void btnLoginOnAction(ActionEvent event) {
         try {
-            Navigation.navigation(Rout.DASH_BOARD,root);
+            Navigation.navigation(Rout.DASH_BOARD,LoginPane);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -38,6 +38,12 @@ public class LoginPageFormController {
 
     @FXML
     void btnSignUpOnAction(ActionEvent event) {
+
+        try {
+            Navigation.navigation(Rout.SIGN_UP, LoginPane);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 }
