@@ -5,6 +5,7 @@ import lk.ijse.gdse.orm.hibernate.bo.custom.RoomBO;
 import lk.ijse.gdse.orm.hibernate.dao.DAOFactory;
 import lk.ijse.gdse.orm.hibernate.dao.custom.RoomDAO;
 import lk.ijse.gdse.orm.hibernate.dto.RoomDTO;
+import lk.ijse.gdse.orm.hibernate.entity.Room;
 
 import java.util.ArrayList;
 import java.util.List;
