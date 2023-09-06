@@ -1,17 +1,16 @@
 package lk.ijse.gdse.orm.hibernate.controller;
 
-public class SettingsFormController {
-    @FXML
-    private Line newPwLine;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 
+public class SettingsFormController {
     @FXML
     private PasswordField newPwTxt;
 
     @FXML
     private Button newPwViewBtn;
 
-    @FXML
-    private Line oldPwLine;
 
     @FXML
     private TextField oldPwTxt;
