@@ -76,4 +76,9 @@ public class StdFormController {
     @FXML
     void svBtnOnAction(ActionEvent event) {
     }
+
+    @FXML
+    void searchBtnOnCtion(ActionEvent event) {
+
+    }
 }
