@@ -48,4 +48,14 @@ public class RoomTM {
     public void setKeyMoney(String keyMoney) {
         this.keyMoney = keyMoney;
     }
+
+    @Override
+    public String toString() {
+        return "RoomTM{" +
+                "id='" + id + '\'' +
+                ", type='" + type + '\'' +
+                ", qty=" + qty +
+                ", keyMoney='" + keyMoney + '\'' +
+                '}';
+    }
 }
