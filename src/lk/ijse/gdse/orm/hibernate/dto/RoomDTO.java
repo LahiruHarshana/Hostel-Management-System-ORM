@@ -47,4 +47,14 @@ public class RoomDTO {
     public void setKeyMoney(String keyMoney) {
         this.keyMoney = keyMoney;
     }
+
+    @Override
+    public String toString() {
+        return "RoomDTO{" +
+                "id='" + id + '\'' +
+                ", type='" + type + '\'' +
+                ", qty=" + qty +
+                ", keyMoney='" + keyMoney + '\'' +
+                '}';
+    }
 }
