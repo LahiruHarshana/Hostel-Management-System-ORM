@@ -1,9 +1,7 @@
 package lk.ijse.gdse.orm.hibernate.bo.custom;
 
-import lk.ijse.bo.SuperBo;
-import lk.ijse.dto.StudentDTO;
 
-import java.util.List;
+import lk.ijse.gdse.orm.hibernate.bo.SuperBo;
 
 public interface StudentBO extends SuperBo {
     List<StudentDTO> getAll();
