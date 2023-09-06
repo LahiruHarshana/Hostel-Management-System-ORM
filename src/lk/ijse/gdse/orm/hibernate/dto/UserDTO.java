@@ -8,4 +8,7 @@ public class UserDTO {
         this.userName = userName;
         this.password = password;
     }
+
+    public UserDTO() {
+    }
 }
