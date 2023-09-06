@@ -34,10 +34,10 @@
             <TableColumn fx:id="kyMoneyColm" prefWidth="324.0" text="Key Money" />
         </columns>
       </TableView>
-      <Button fx:id="deleteBtn" layoutX="808.0" layoutY="324.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" prefHeight="37.0" prefWidth="100.0" text="Delete" />
-      <Button fx:id="upBtn" layoutX="699.0" layoutY="324.0" mnemonicParsing="false" onAction="#upBtnOnAction" prefHeight="29.0" prefWidth="100.0" text="Update" />
-      <Button fx:id="svBtn" layoutX="590.0" layoutY="324.0" mnemonicParsing="false" onAction="#svBtnOnAction" prefHeight="29.0" prefWidth="100.0" text="Save" />
-      <Button fx:id="addBtn1" layoutX="528.0" layoutY="324.0" mnemonicParsing="false" onAction="#addNewBtnOnAction" prefHeight="37.0" prefWidth="53.0" text="+" />
+      <Button fx:id="deleteBtn" layoutX="808.0" layoutY="324.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" prefHeight="37.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Delete" />
+      <Button fx:id="upBtn" layoutX="699.0" layoutY="324.0" mnemonicParsing="false" onAction="#upBtnOnAction" prefHeight="29.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Update" />
+      <Button fx:id="svBtn" layoutX="590.0" layoutY="324.0" mnemonicParsing="false" onAction="#svBtnOnAction" prefHeight="29.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Save" />
+      <Button fx:id="addBtn1" layoutX="528.0" layoutY="324.0" mnemonicParsing="false" onAction="#addNewBtnOnAction" prefHeight="37.0" prefWidth="53.0" stylesheets="@assests/css/style.css" text="+" />
       <JFXTextField labelFloat="true" layoutX="125.0" layoutY="124.0" promptText="Room ID ">
          <font>
             <Font size="17.0" />
