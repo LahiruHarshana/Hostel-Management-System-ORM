@@ -5,6 +5,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TextField;
+import lk.ijse.gdse.orm.hibernate.dto.tm.StudentTM;
 
 public class StdFormController {
     @FXML
