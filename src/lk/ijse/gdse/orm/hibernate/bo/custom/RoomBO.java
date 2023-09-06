@@ -2,6 +2,7 @@ package lk.ijse.gdse.orm.hibernate.bo.custom;
 
 
 import lk.ijse.gdse.orm.hibernate.bo.SuperBo;
+import lk.ijse.gdse.orm.hibernate.dto.RoomDTO;
 
 import java.util.List;
 
