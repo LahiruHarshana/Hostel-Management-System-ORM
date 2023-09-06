@@ -1,4 +1,4 @@
-package lk.ijse.entity;
+package lk.ijse.gdse.orm.hibernate.entity;
 
 import lombok.*;
 
