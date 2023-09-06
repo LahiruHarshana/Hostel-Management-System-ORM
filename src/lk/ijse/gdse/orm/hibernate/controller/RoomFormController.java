@@ -14,7 +14,8 @@ public class RoomFormController {
     private TableColumn<?, ?> idColm;
 
     @FXML
-    private Line idLine;
+    private Text idTxt;
+
 
 
 
