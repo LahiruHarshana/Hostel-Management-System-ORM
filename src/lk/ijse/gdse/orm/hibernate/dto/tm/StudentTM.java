@@ -18,4 +18,7 @@ public class StudentTM {
         this.address = address;
         this.gender = gender;
     }
+
+    public StudentTM() {
+    }
 }
