@@ -48,5 +48,9 @@ public class RoomFormController {
     @FXML
     private TableColumn<?, ?> typeColm;
 
+    @FXML
+    private Button upBtn;
+
+
 
 }
