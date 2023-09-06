@@ -17,7 +17,7 @@
          <graphic>
             <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../assets/search-interface-symbol%201.png" />
+                  <Image url="@assests/icons8-search-64.png" />
                </image>
             </ImageView>
          </graphic>
@@ -36,23 +36,23 @@
          </columns>
       </TableView>
       <Button fx:id="addBtn1" layoutX="588.0" layoutY="369.0" mnemonicParsing="false" onAction="#addNewBtnOnAction" prefHeight="37.0" prefWidth="53.0" stylesheets="@assests/css/style.css" text="+" />
-      <JFXTextField labelFloat="true" layoutX="154.0" layoutY="118.0" promptText="Student ID">
+      <JFXTextField fx:id="idTxt" labelFloat="true" layoutX="154.0" layoutY="118.0" promptText="Student ID">
          <font>
             <Font size="18.0" />
          </font></JFXTextField>
-      <JFXTextField labelFloat="true" layoutX="155.0" layoutY="184.0" promptText="Contact Number">
+      <JFXTextField fx:id="contactTxt" labelFloat="true" layoutX="155.0" layoutY="184.0" promptText="Contact Number">
          <font>
             <Font size="18.0" />
          </font></JFXTextField>
-      <JFXTextField labelFloat="true" layoutX="534.0" layoutY="117.0" prefHeight="35.0" prefWidth="357.0" promptText="Name">
+      <JFXTextField fx:id="nameTxt" labelFloat="true" layoutX="534.0" layoutY="117.0" prefHeight="35.0" prefWidth="357.0" promptText="Name">
          <font>
             <Font size="18.0" />
          </font></JFXTextField>
-      <JFXTextField labelFloat="true" layoutX="537.0" layoutY="176.0" promptText="Gender">
+      <JFXTextField fx:id="genTxt" labelFloat="true" layoutX="537.0" layoutY="176.0" promptText="Gender">
          <font>
             <Font size="18.0" />
          </font></JFXTextField>
-      <JFXTextField labelFloat="true" layoutX="154.0" layoutY="307.0" prefHeight="35.0" prefWidth="434.0" promptText="Address">
+      <JFXTextField fx:id="addressTxt" labelFloat="true" layoutX="154.0" layoutY="307.0" prefHeight="35.0" prefWidth="434.0" promptText="Address">
          <font>
             <Font size="18.0" />
          </font></JFXTextField>
