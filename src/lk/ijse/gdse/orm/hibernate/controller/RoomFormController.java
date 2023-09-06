@@ -28,6 +28,9 @@ public class RoomFormController {
     private TableColumn<?, ?> qtyColm;
     @FXML
     private TextField qtyTxt;
+    @FXML
+    private TableView<RoomTM> rmTbl;
+
 
 
 
