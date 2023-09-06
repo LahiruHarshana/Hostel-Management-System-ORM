@@ -50,9 +50,6 @@ public class StdFormController {
     private TableColumn<?, ?> nameColm;
 
     @FXML
-    private Line nameLine;
-
-    @FXML
     private TextField nameTxt;
 
     @FXML
