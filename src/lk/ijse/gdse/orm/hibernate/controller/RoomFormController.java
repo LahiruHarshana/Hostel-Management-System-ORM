@@ -24,6 +24,9 @@ public class RoomFormController {
     @FXML
     private TableColumn<?, ?> kyMoneyColm;
 
+    @FXML
+    private TableColumn<?, ?> qtyColm;
+
 
 
 
