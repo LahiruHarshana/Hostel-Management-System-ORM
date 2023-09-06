@@ -41,6 +41,6 @@
       <JFXTextField labelFloat="true" layoutX="175.0" layoutY="124.0" promptText="Room ID " />
       <JFXTextField labelFloat="true" layoutX="189.0" layoutY="231.0" promptText="Key Money" />
       <JFXTextField labelFloat="true" layoutX="493.0" layoutY="137.0" promptText="Room Type" />
-      <JFXTextField labelFloat="true" layoutX="493.0" layoutY="245.0" />
+      <JFXTextField labelFloat="true" layoutX="493.0" layoutY="245.0" promptText="Qty" />
    </children>
 </AnchorPane>
