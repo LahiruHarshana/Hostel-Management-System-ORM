@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="740.0" prefWidth="522.0" style="-fx-background-color: #648696;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controllers.SettingsFormController">
+<AnchorPane prefHeight="740.0" prefWidth="522.0" style="-fx-background-color: #648696;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.orm.hibernate.controller.SettingsFormController">
    <children>
       <Line fx:id="oldPwLine" endX="265.0" layoutX="195.0" layoutY="358.0" startX="-120.0" />
       <TextField fx:id="oldPwTxt" layoutX="75.0" layoutY="311.0" onAction="#oldPwTxtOnAction" prefHeight="45.0" prefWidth="386.0" style="-fx-background-color: tranceparent;">
