@@ -1,17 +1,11 @@
 package lk.ijse.gdse.orm.hibernate.entity;
 
-import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Getter
-@Setter
-@ToString
-@AllArgsConstructor
-@NoArgsConstructor
 @Entity
 @Table(name = "user")
 public class User {
@@ -20,4 +14,9 @@ public class User {
     private String usrName;
     @Column(name = "usr_pw")
     private String password;
+
+    public User(String usrName, String password) {
+        this.usrName = usrName;
+        this.password = password;
+    }
 }
