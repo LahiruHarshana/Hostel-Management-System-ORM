@@ -2,6 +2,7 @@ package lk.ijse.gdse.orm.hibernate.bo.custom.impl;
 
 
 import lk.ijse.gdse.orm.hibernate.bo.custom.StudentBO;
+import lk.ijse.gdse.orm.hibernate.dao.DAOFactory;
 import lk.ijse.gdse.orm.hibernate.dao.custom.StudentDAO;
 import lk.ijse.gdse.orm.hibernate.dto.StudentDTO;
 import lk.ijse.gdse.orm.hibernate.entity.Student;
@@ -24,7 +25,7 @@ public class StudentBOImpl implements StudentBO {
                     student.getId(),
                     student.getName(),
                     student.getAddress(),
-                    student.getContact(),
+                    student.getContact_num(),
                     student.getDob(),
                     student.getGender())
             );
@@ -35,7 +36,7 @@ public class StudentBOImpl implements StudentBO {
     @Override
     public boolean saveStd(StudentDTO studentDTO) {
         return studentDAO.save(new Student(
-                studentDTO.getSId(),
+                studentDTO.getsId(),
                 studentDTO.getName(),
                 studentDTO.getAddress(),
                 studentDTO.getContact(),
@@ -47,7 +48,7 @@ public class StudentBOImpl implements StudentBO {
     @Override
     public boolean updateStd(StudentDTO studentDTO) {
         return studentDAO.update(new Student(
-                studentDTO.getSId(),
+                studentDTO.getsId(),
                 studentDTO.getName(),
                 studentDTO.getAddress(),
                 studentDTO.getContact(),
@@ -64,7 +65,7 @@ public class StudentBOImpl implements StudentBO {
                     student.getId(),
                     student.getName(),
                     student.getAddress(),
-                    student.getContact(),
+                    student.getContact_num(),
                     student.getDob(),
                     student.getGender()
             );
