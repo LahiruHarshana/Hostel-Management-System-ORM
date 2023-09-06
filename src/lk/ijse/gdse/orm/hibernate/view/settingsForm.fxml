@@ -9,14 +9,8 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="740.0" prefWidth="522.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controllers.SettingsFormController">
+<AnchorPane prefHeight="740.0" prefWidth="522.0" style="-fx-background-color: #648696;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controllers.SettingsFormController">
    <children>
-      <ImageView fitHeight="764.0" fitWidth="545.0" layoutX="143.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <image>
-            <Image url="@../assets/setingForm.png" />
-         </image>
-      </ImageView>
       <Line fx:id="oldPwLine" endX="265.0" layoutX="195.0" layoutY="338.0" startX="-120.0" />
       <TextField fx:id="oldPwTxt" layoutX="75.0" layoutY="291.0" onAction="#oldPwTxtOnAction" prefHeight="45.0" prefWidth="386.0" style="-fx-background-color: tranceparent;">
          <font>
