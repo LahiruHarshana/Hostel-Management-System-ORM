@@ -19,4 +19,7 @@ public class StudentDTO {
         this.dob = dob;
         this.gen = gen;
     }
+
+    public StudentDTO() {
+    }
 }
