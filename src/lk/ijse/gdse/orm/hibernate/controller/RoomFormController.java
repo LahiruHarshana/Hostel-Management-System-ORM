@@ -6,6 +6,9 @@ import javafx.scene.control.Button;
 public class RoomFormController {
     @FXML
     private Button addBtn1;
+    @FXML
+    private Button deleteBtn;
+
 
 
 }
