@@ -4,6 +4,7 @@ package lk.ijse.gdse.orm.hibernate.bo.custom.impl;
 import lk.ijse.gdse.orm.hibernate.bo.custom.StudentBO;
 import lk.ijse.gdse.orm.hibernate.dao.custom.StudentDAO;
 import lk.ijse.gdse.orm.hibernate.dto.StudentDTO;
+import lk.ijse.gdse.orm.hibernate.entity.Student;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
