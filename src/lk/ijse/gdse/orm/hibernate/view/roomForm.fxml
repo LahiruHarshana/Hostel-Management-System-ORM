@@ -26,7 +26,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <TableView fx:id="rmTbl" layoutX="38.0" layoutY="380.0" prefHeight="403.0" prefWidth="959.0" stylesheets="@assests/css/tblStyle.css">
+      <TableView fx:id="rmTbl" layoutX="3.0" layoutY="390.0" prefHeight="403.0" prefWidth="925.0" stylesheets="@assests/css/tblStyle.css">
         <columns>
           <TableColumn fx:id="idColm" minWidth="0.0" prefWidth="191.76757049560547" text="Room ID" />
           <TableColumn fx:id="typeColm" prefWidth="325.7834167480469" text="Room Type" />
@@ -34,10 +34,10 @@
             <TableColumn fx:id="kyMoneyColm" prefWidth="324.0" text="Key Money" />
         </columns>
       </TableView>
-      <Button fx:id="deleteBtn" layoutX="878.0" layoutY="314.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" prefHeight="37.0" prefWidth="100.0" text="Delete" />
-      <Button fx:id="upBtn" layoutX="769.0" layoutY="314.0" mnemonicParsing="false" onAction="#upBtnOnAction" prefHeight="29.0" prefWidth="100.0" text="Update" />
-      <Button fx:id="svBtn" layoutX="660.0" layoutY="314.0" mnemonicParsing="false" onAction="#svBtnOnAction" prefHeight="29.0" prefWidth="100.0" text="Save" />
-      <Button fx:id="addBtn1" layoutX="598.0" layoutY="314.0" mnemonicParsing="false" onAction="#addNewBtnOnAction" prefHeight="37.0" prefWidth="53.0" text="+" />
+      <Button fx:id="deleteBtn" layoutX="808.0" layoutY="324.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" prefHeight="37.0" prefWidth="100.0" text="Delete" />
+      <Button fx:id="upBtn" layoutX="699.0" layoutY="324.0" mnemonicParsing="false" onAction="#upBtnOnAction" prefHeight="29.0" prefWidth="100.0" text="Update" />
+      <Button fx:id="svBtn" layoutX="590.0" layoutY="324.0" mnemonicParsing="false" onAction="#svBtnOnAction" prefHeight="29.0" prefWidth="100.0" text="Save" />
+      <Button fx:id="addBtn1" layoutX="528.0" layoutY="324.0" mnemonicParsing="false" onAction="#addNewBtnOnAction" prefHeight="37.0" prefWidth="53.0" text="+" />
       <JFXTextField labelFloat="true" layoutX="125.0" layoutY="124.0" promptText="Room ID ">
          <font>
             <Font size="17.0" />

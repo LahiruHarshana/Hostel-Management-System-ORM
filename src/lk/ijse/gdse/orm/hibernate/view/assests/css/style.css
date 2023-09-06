@@ -1,0 +1,18 @@
+/* Styling for the default button state */
+.button {
+    -fx-background-color: #85B7FF;
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-padding: 10px 20px;
+}
+
+/* Styling for the button on hover */
+.button:hover {
+    -fx-background-color: #090963;
+}
+
+/* Styling for the button on click */
+.button:pressed {
+    -fx-background-color: #090963;
+}
