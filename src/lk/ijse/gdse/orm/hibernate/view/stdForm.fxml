@@ -15,7 +15,7 @@
       <DatePicker fx:id="dobPicker" layoutX="156.0" layoutY="255.0" prefHeight="31.0" prefWidth="268.0" promptText="DOB" style="-fx-background-color: tranceparent;" />
       <Button fx:id="searchBtn" layoutX="365.0" layoutY="121.0" mnemonicParsing="false" onAction="#searchBtnOnCtion" prefHeight="45.0" prefWidth="53.0" style="-fx-background-color: tranceparent;" stylesheets="@../styles/search.css">
          <graphic>
-            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="searchBtn" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@assests/icons8-search-64.png" />
                </image>
