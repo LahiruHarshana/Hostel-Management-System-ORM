@@ -44,10 +44,10 @@
             <Font size="18.0" />
          </font></JFXTextField>
       <Button fx:id="add1Btn" layoutX="581.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="+" />
-      <Button fx:id="svBtn" layoutX="635.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="save" />
-      <Button fx:id="upBtn" layoutX="711.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="update" />
-      <Button fx:id="deleteBtn" layoutX="794.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="Delete" />
-      <Button fx:id="searchBtn" layoutX="360.0" layoutY="122.0" mnemonicParsing="false" style="-fx-background-color: white;">
+      <Button fx:id="svBtn" layoutX="635.0" layoutY="380.0" mnemonicParsing="false" onAction="#svBtnOnAction" stylesheets="@assests/css/style.css" text="save" />
+      <Button fx:id="upBtn" layoutX="711.0" layoutY="380.0" mnemonicParsing="false" onAction="#upBtnOnAction" stylesheets="@assests/css/style.css" text="update" />
+      <Button fx:id="deleteBtn" layoutX="794.0" layoutY="380.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" stylesheets="@assests/css/style.css" text="Delete" />
+      <Button fx:id="searchBtn" layoutX="360.0" layoutY="122.0" mnemonicParsing="false" onAction="#searchBtnOnCtion" style="-fx-background-color: white;">
          <graphic>
             <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
