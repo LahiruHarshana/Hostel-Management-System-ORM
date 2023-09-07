@@ -25,21 +25,21 @@
             <TableColumn fx:id="kyMoneyColm" prefWidth="324.0" text="Key Money" />
         </columns>
       </TableView>
-      <JFXTextField fx:id="roomIdTxt" labelFloat="true" layoutX="125.0" layoutY="124.0" promptText="Room ID ">
+      <JFXTextField fx:id="roomIdTxt" disable="true" labelFloat="true" layoutX="125.0" layoutY="124.0" promptText="Room ID ">
          <font>
             <Font size="17.0" />
          </font></JFXTextField>
-      <JFXTextField fx:id="keyMoneyTxt" labelFloat="true" layoutX="129.0" layoutY="231.0" promptText="Key Money">
+      <JFXTextField fx:id="keyMoneyTxt" disable="true" labelFloat="true" layoutX="129.0" layoutY="231.0" promptText="Key Money">
          <font>
             <Font size="17.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="roomTypeTxt" labelFloat="true" layoutX="573.0" layoutY="127.0" promptText="Room Type">
+      <JFXTextField fx:id="roomTypeTxt" disable="true" labelFloat="true" layoutX="573.0" layoutY="127.0" promptText="Room Type">
          <font>
             <Font size="17.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="qtyTxt" labelFloat="true" layoutX="573.0" layoutY="225.0" promptText="Qty">
+      <JFXTextField fx:id="qtyTxt" disable="true" labelFloat="true" layoutX="573.0" layoutY="225.0" promptText="Qty">
          <font>
             <Font size="17.0" />
          </font>
