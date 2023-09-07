@@ -10,22 +10,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="832.0" prefWidth="935.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.orm.hibernate.controller.RoomFormController">
+<AnchorPane prefHeight="832.0" prefWidth="935.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.orm.hibernate.controller.RoomFormController">
    <children>
       <Text fx:id="idTxt" layoutX="116.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0">
          <font>
             <Font size="24.0" />
          </font>
       </Text>
-      <Button fx:id="searchBtn" layoutX="315.0" layoutY="118.0" mnemonicParsing="false" onAction="#searchBtnOnCtion" prefHeight="45.0" prefWidth="53.0" style="-fx-background-color: tranceparent;" stylesheets="@../styles/search.css">
-         <graphic>
-            <ImageView fx:id="searchBtn" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@assests/icons8-search-64.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
       <TableView fx:id="rmTbl" layoutX="3.0" layoutY="390.0" prefHeight="403.0" prefWidth="925.0" stylesheets="@assests/css/tblStyle.css">
         <columns>
           <TableColumn fx:id="idColm" minWidth="0.0" prefWidth="191.76757049560547" text="Room ID" />
@@ -34,10 +25,6 @@
             <TableColumn fx:id="kyMoneyColm" prefWidth="324.0" text="Key Money" />
         </columns>
       </TableView>
-      <Button fx:id="deleteBtn" layoutX="808.0" layoutY="324.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" prefHeight="37.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Delete" />
-      <Button fx:id="upBtn" layoutX="699.0" layoutY="324.0" mnemonicParsing="false" onAction="#upBtnOnAction" prefHeight="29.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Update" />
-      <Button fx:id="svBtn" layoutX="590.0" layoutY="324.0" mnemonicParsing="false" onAction="#svBtnOnAction" prefHeight="29.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Save" />
-      <Button fx:id="addBtn1" layoutX="528.0" layoutY="324.0" mnemonicParsing="false" onAction="#addNewBtnOnAction" prefHeight="37.0" prefWidth="53.0" stylesheets="@assests/css/style.css" text="+" />
       <JFXTextField fx:id="roomIdTxt" labelFloat="true" layoutX="125.0" layoutY="124.0" promptText="Room ID ">
          <font>
             <Font size="17.0" />
@@ -57,5 +44,18 @@
             <Font size="17.0" />
          </font>
       </JFXTextField>
+      <Button fx:id="addBtn1" layoutX="569.0" layoutY="320.0" mnemonicParsing="false" onAction="#addNewBtnOnAction" stylesheets="@assests/css/style.css" text="+" />
+      <Button fx:id="svBtn" layoutX="636.0" layoutY="320.0" mnemonicParsing="false" onAction="#svBtnOnAction" stylesheets="@assests/css/style.css" text="Save" />
+      <Button fx:id="upBtn" layoutX="727.0" layoutY="320.0" mnemonicParsing="false" onAction="#upBtnOnAction" stylesheets="@assests/css/style.css" text="Update" />
+      <Button fx:id="deleteBtn" layoutX="821.0" layoutY="320.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" stylesheets="@assests/css/style.css" text="Delete" />
+      <Button fx:id="searchBtn" layoutX="326.0" layoutY="127.0" mnemonicParsing="false" onAction="#searchBtnOnCtion" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/icons8-search-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>
