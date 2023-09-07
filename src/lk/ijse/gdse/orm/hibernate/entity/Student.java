@@ -1,10 +1,9 @@
 package lk.ijse.gdse.orm.hibernate.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "student")
@@ -22,6 +21,9 @@ public class Student {
     private Date dob;
     @Column(name = "student_gender")
     private String gender;
+
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY,mappedBy = "student")
+    List<Reservation> reservations = new ArrayList<>();
 
     public Student() {
     }
