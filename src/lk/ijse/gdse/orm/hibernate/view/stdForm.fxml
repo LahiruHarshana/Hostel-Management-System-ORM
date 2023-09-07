@@ -23,27 +23,27 @@
             <TableColumn fx:id="addressColm" prefWidth="204.84912109375" text="Address" />
          </columns>
       </TableView>
-      <JFXTextField fx:id="idTxt" labelFloat="true" layoutX="154.0" layoutY="118.0" promptText="Student ID">
+      <JFXTextField fx:id="idTxt" disable="true" labelFloat="true" layoutX="154.0" layoutY="118.0" promptText="Student ID">
          <font>
             <Font size="18.0" />
          </font></JFXTextField>
-      <JFXTextField fx:id="contactTxt" labelFloat="true" layoutX="155.0" layoutY="184.0" promptText="Contact Number">
+      <JFXTextField fx:id="contactTxt" disable="true" labelFloat="true" layoutX="155.0" layoutY="184.0" promptText="Contact Number">
          <font>
             <Font size="18.0" />
          </font></JFXTextField>
-      <JFXTextField fx:id="nameTxt" labelFloat="true" layoutX="534.0" layoutY="117.0" prefHeight="35.0" prefWidth="357.0" promptText="Name">
+      <JFXTextField fx:id="nameTxt" disable="true" labelFloat="true" layoutX="534.0" layoutY="117.0" prefHeight="35.0" prefWidth="357.0" promptText="Name">
          <font>
             <Font size="18.0" />
          </font></JFXTextField>
-      <JFXTextField fx:id="genTxt" labelFloat="true" layoutX="537.0" layoutY="176.0" promptText="Gender">
+      <JFXTextField fx:id="genTxt" disable="true" labelFloat="true" layoutX="537.0" layoutY="176.0" promptText="Gender">
          <font>
             <Font size="18.0" />
          </font></JFXTextField>
-      <JFXTextField fx:id="addressTxt" labelFloat="true" layoutX="154.0" layoutY="307.0" prefHeight="35.0" prefWidth="434.0" promptText="Address">
+      <JFXTextField fx:id="addressTxt" disable="true" labelFloat="true" layoutX="154.0" layoutY="307.0" prefHeight="35.0" prefWidth="434.0" promptText="Address">
          <font>
             <Font size="18.0" />
          </font></JFXTextField>
-      <Button fx:id="add1Btn" layoutX="581.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="+" />
+      <Button fx:id="add1Btn" layoutX="581.0" layoutY="380.0" mnemonicParsing="false" onAction="#addNewBtnOnAction" stylesheets="@assests/css/style.css" text="+" />
       <Button fx:id="svBtn" layoutX="635.0" layoutY="380.0" mnemonicParsing="false" onAction="#svBtnOnAction" stylesheets="@assests/css/style.css" text="save" />
       <Button fx:id="upBtn" layoutX="711.0" layoutY="380.0" mnemonicParsing="false" onAction="#upBtnOnAction" stylesheets="@assests/css/style.css" text="update" />
       <Button fx:id="deleteBtn" layoutX="794.0" layoutY="380.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" stylesheets="@assests/css/style.css" text="Delete" />

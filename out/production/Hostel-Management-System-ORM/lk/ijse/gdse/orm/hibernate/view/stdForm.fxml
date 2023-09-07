@@ -13,15 +13,6 @@
 <AnchorPane prefHeight="832.0" prefWidth="935.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.orm.hibernate.controller.StdFormController">
    <children>
       <DatePicker fx:id="dobPicker" layoutX="156.0" layoutY="255.0" prefHeight="31.0" prefWidth="268.0" promptText="DOB" style="-fx-background-color: tranceparent;" />
-      <Button fx:id="searchBtn" layoutX="365.0" layoutY="121.0" mnemonicParsing="false" onAction="#searchBtnOnCtion" prefHeight="45.0" prefWidth="53.0" style="-fx-background-color: tranceparent;" stylesheets="@../styles/search.css">
-         <graphic>
-            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@assests/icons8-search-64.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
       <TableView fx:id="stdTbl" layoutX="39.0" layoutY="431.0" prefHeight="341.0" prefWidth="857.0" stylesheets="@assests/css/tblStyle.css">
          <columns>
             <TableColumn fx:id="idColm" minWidth="0.0" prefWidth="77.16960906982422" text="Student ID" />
@@ -32,29 +23,38 @@
             <TableColumn fx:id="addressColm" prefWidth="204.84912109375" text="Address" />
          </columns>
       </TableView>
-      <JFXTextField fx:id="idTxt" labelFloat="true" layoutX="154.0" layoutY="118.0" promptText="Student ID">
+      <JFXTextField fx:id="idTxt" disable="true" labelFloat="true" layoutX="154.0" layoutY="118.0" promptText="Student ID">
          <font>
             <Font size="18.0" />
          </font></JFXTextField>
-      <JFXTextField fx:id="contactTxt" labelFloat="true" layoutX="155.0" layoutY="184.0" promptText="Contact Number">
+      <JFXTextField fx:id="contactTxt" disable="true" labelFloat="true" layoutX="155.0" layoutY="184.0" promptText="Contact Number">
          <font>
             <Font size="18.0" />
          </font></JFXTextField>
-      <JFXTextField fx:id="nameTxt" labelFloat="true" layoutX="534.0" layoutY="117.0" prefHeight="35.0" prefWidth="357.0" promptText="Name">
+      <JFXTextField fx:id="nameTxt" disable="true" labelFloat="true" layoutX="534.0" layoutY="117.0" prefHeight="35.0" prefWidth="357.0" promptText="Name">
          <font>
             <Font size="18.0" />
          </font></JFXTextField>
-      <JFXTextField fx:id="genTxt" labelFloat="true" layoutX="537.0" layoutY="176.0" promptText="Gender">
+      <JFXTextField fx:id="genTxt" disable="true" labelFloat="true" layoutX="537.0" layoutY="176.0" promptText="Gender">
          <font>
             <Font size="18.0" />
          </font></JFXTextField>
-      <JFXTextField fx:id="addressTxt" labelFloat="true" layoutX="154.0" layoutY="307.0" prefHeight="35.0" prefWidth="434.0" promptText="Address">
+      <JFXTextField fx:id="addressTxt" disable="true" labelFloat="true" layoutX="154.0" layoutY="307.0" prefHeight="35.0" prefWidth="434.0" promptText="Address">
          <font>
             <Font size="18.0" />
          </font></JFXTextField>
-      <Button fx:id="add1Btn" layoutX="581.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="+" />
-      <Button fx:id="svBtn" layoutX="635.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="save" />
-      <Button fx:id="upBtn" layoutX="711.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="update" />
-      <Button fx:id="deleteBtn" layoutX="794.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="Delete" />
+      <Button fx:id="add1Btn" layoutX="581.0" layoutY="380.0" mnemonicParsing="false" onAction="#addNewBtnOnAction" stylesheets="@assests/css/style.css" text="+" />
+      <Button fx:id="svBtn" layoutX="635.0" layoutY="380.0" mnemonicParsing="false" onAction="#svBtnOnAction" stylesheets="@assests/css/style.css" text="save" />
+      <Button fx:id="upBtn" layoutX="711.0" layoutY="380.0" mnemonicParsing="false" onAction="#upBtnOnAction" stylesheets="@assests/css/style.css" text="update" />
+      <Button fx:id="deleteBtn" layoutX="794.0" layoutY="380.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" stylesheets="@assests/css/style.css" text="Delete" />
+      <Button fx:id="searchBtn" layoutX="360.0" layoutY="122.0" mnemonicParsing="false" onAction="#searchBtnOnCtion" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/icons8-search-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>

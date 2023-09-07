@@ -76,6 +76,13 @@ public class StdFormController {
 
     private final StudentBO studentBO= BoFactory.getInstance().getBo(BoFactory.BOTypes.STUDENT);
 
+    @FXML
+    void initialize(){
+        initUi();
+        setCellValueFactory();
+        fillTable();
+    }
+
 
 
     private void fillTable() {
