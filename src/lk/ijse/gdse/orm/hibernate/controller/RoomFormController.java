@@ -124,17 +124,9 @@ public class RoomFormController {
 
     @FXML
     void searchBtnOnCtion(ActionEvent event) {
-        String rid=idTxt.getText();
+        String rid=roomIdTxt.getText();
         RoomDTO roomDTO=roomBO.getRoom(rid);
         if (roomDTO!=null){
-            svBtn.setDisable(true);
-            upBtn.setDisable(false);
-            deleteBtn.setDisable(false);
-            roomIdTxt.setDisable(true);
-            roomTypeTxt.setDisable(false);
-            qtyTxt.setDisable(false);
-            keyMoneyTxt.setDisable(false);
-
             roomIdTxt.setText(roomDTO.getId());
             roomTypeTxt.setText(roomDTO.getType());
             qtyTxt.setText(String.valueOf(roomDTO.getQty()));
