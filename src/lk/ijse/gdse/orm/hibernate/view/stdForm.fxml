@@ -52,9 +52,9 @@
          <font>
             <Font size="18.0" />
          </font></JFXTextField>
-      <Button layoutX="581.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="+" />
-      <Button layoutX="645.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="save" />
-      <Button layoutX="710.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="update" />
-      <Button layoutX="794.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="Delete" />
+      <Button fx:id="add1Btn" layoutX="581.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="+" />
+      <Button layoutX="635.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="save" />
+      <Button layoutX="711.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="update" />
+      <Button fx:id="deleteBtn" layoutX="794.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="Delete" />
    </children>
 </AnchorPane>
