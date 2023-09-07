@@ -22,9 +22,6 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="deleteBtn" layoutX="808.0" layoutY="369.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" prefHeight="37.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Delete" />
-      <Button fx:id="upBtn" layoutX="699.0" layoutY="369.0" mnemonicParsing="false" onAction="#upBtnOnAction" prefHeight="29.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Update" />
-      <Button fx:id="svBtn" layoutX="590.0" layoutY="369.0" mnemonicParsing="false" onAction="#svBtnOnAction" prefHeight="29.0" prefWidth="100.0" stylesheets="@assests/css/style.css" text="Save" />
       <TableView fx:id="stdTbl" layoutX="39.0" layoutY="431.0" prefHeight="341.0" prefWidth="857.0" stylesheets="@assests/css/tblStyle.css">
          <columns>
             <TableColumn fx:id="idColm" minWidth="0.0" prefWidth="77.16960906982422" text="Student ID" />
@@ -35,7 +32,6 @@
             <TableColumn fx:id="addressColm" prefWidth="204.84912109375" text="Address" />
          </columns>
       </TableView>
-      <Button fx:id="addBtn1" layoutX="528.0" layoutY="369.0" mnemonicParsing="false" onAction="#addNewBtnOnAction" prefHeight="37.0" prefWidth="53.0" stylesheets="@assests/css/style.css" text="+" />
       <JFXTextField fx:id="idTxt" labelFloat="true" layoutX="154.0" layoutY="118.0" promptText="Student ID">
          <font>
             <Font size="18.0" />
@@ -56,5 +52,9 @@
          <font>
             <Font size="18.0" />
          </font></JFXTextField>
+      <Button layoutX="581.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="+" />
+      <Button layoutX="645.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="save" />
+      <Button layoutX="710.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="update" />
+      <Button layoutX="794.0" layoutY="380.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="Delete" />
    </children>
 </AnchorPane>

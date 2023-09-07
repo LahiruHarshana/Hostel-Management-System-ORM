@@ -3,9 +3,11 @@ package lk.ijse.gdse.orm.hibernate.controller;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import lk.ijse.gdse.orm.hibernate.controller.util.Navigation;
 import lk.ijse.gdse.orm.hibernate.controller.util.Rout;
 
@@ -24,15 +26,17 @@ public class DashBoardFormController implements Initializable {
     private AnchorPane bodyPane;
 
     @FXML
-    void homeBtnOnAction(ActionEvent event) {
-        Thread thread = new Thread(() -> Platform.runLater(() -> {
-            try {
-                Navigation.navigation(Rout.HOME, bodyPane);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        }));
-        thread.start();
+    void homeBtnOnAction(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/lk/ijse/gdse/orm/hibernate/view/homeForm.fxml"));
+        Pane registerPane = fxmlLoader.load();
+
+        try {
+            bodyPane.getChildren().clear();
+            bodyPane.getChildren().setAll(registerPane);
+            System.gc();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
     @FXML
     void reservationBtnOnAction(ActionEvent event) {
