@@ -4,6 +4,7 @@ import lk.ijse.gdse.orm.hibernate.dao.custom.QueryDAO;
 import lk.ijse.gdse.orm.hibernate.dto.ReservationDTO;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class QueryDAOImpl implements QueryDAO {
     @Override
