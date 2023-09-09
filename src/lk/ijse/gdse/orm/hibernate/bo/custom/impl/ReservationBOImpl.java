@@ -9,6 +9,7 @@ import lk.ijse.gdse.orm.hibernate.dao.custom.RoomDAO;
 import lk.ijse.gdse.orm.hibernate.dao.custom.StudentDAO;
 import lk.ijse.gdse.orm.hibernate.dto.ReservationDTO;
 import lk.ijse.gdse.orm.hibernate.entity.Room;
+import lk.ijse.gdse.orm.hibernate.entity.Student;
 
 import java.util.ArrayList;
 import java.util.List;
