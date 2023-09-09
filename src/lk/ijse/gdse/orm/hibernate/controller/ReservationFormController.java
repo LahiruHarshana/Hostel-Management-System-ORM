@@ -5,10 +5,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.text.Text;
+import lk.ijse.gdse.orm.hibernate.dto.tm.ReservationTM;
 
 public class ReservationFormController {
     @FXML
-    private TableView<?> resTbl;
+    private TableView<ReservationTM> resTbl;
 
     @FXML
     private TableColumn<?, ?> reIdColm;
