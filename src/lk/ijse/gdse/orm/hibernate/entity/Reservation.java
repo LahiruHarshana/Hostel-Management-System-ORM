@@ -3,50 +3,42 @@ package lk.ijse.gdse.orm.hibernate.entity;
 
 import javax.persistence.*;
 import java.sql.Date;
-
-
 @Entity
 @Table(name = "reservation")
-public class Reservation implements SuperEntity{
+public class Reservation {
     @Id
-    @Column(name = "reservation_id",length = 50)
-    private String reservationID;
-    @Column(name = "reservation_date")
+    @Column(name = "res_id",length = 50)
+    private String id;
+    @Column(name = "res_date",columnDefinition = "date")
     private Date date;
-    @Column(name = "reservation_status",length = 50)
+    @Column(name = "res_status")
     private String status;
-    @Column(name = "key_money_exp_date")
-    private Date expDate;
-
     @ManyToOne
-            @JoinColumn(name = "student_id")
-    Student student;
-
+    @JoinColumn(name = "student_type_id",
+            referencedColumnName = "student_id")
+    private Student student;
     @ManyToOne
-            @JoinColumn(name = "room_id")
-    Room room;
+    @JoinColumn(name = "room_id",
+            referencedColumnName = "room_id")
+    private Room room;
 
-   /* @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY,mappedBy = "reservation")
-    List<StudentReservation> reservations = new ArrayList<>();*/
-
-    public Reservation() {
-    }
-
-    public Reservation(String reservationID, Date date, String status, Date expDate, Student student, Room room) {
-        this.reservationID = reservationID;
+    public Reservation(String id, Date date, String status, Student student, Room room) {
+        this.id = id;
         this.date = date;
         this.status = status;
-        this.expDate = expDate;
         this.student = student;
         this.room = room;
     }
 
-    public String getReservationID() {
-        return reservationID;
+    public Reservation() {
     }
 
-    public void setReservationID(String reservationID) {
-        this.reservationID = reservationID;
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public Date getDate() {
@@ -63,14 +55,6 @@ public class Reservation implements SuperEntity{
 
     public void setStatus(String status) {
         this.status = status;
-    }
-
-    public Date getExpDate() {
-        return expDate;
-    }
-
-    public void setExpDate(Date expDate) {
-        this.expDate = expDate;
     }
 
     public Student getStudent() {
@@ -92,10 +76,9 @@ public class Reservation implements SuperEntity{
     @Override
     public String toString() {
         return "Reservation{" +
-                "reservationID='" + reservationID + '\'' +
+                "id='" + id + '\'' +
                 ", date=" + date +
                 ", status='" + status + '\'' +
-                ", expDate=" + expDate +
                 ", student=" + student +
                 ", room=" + room +
                 '}';
