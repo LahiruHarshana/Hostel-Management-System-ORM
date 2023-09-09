@@ -14,7 +14,7 @@ public class BoFactory {
     }
 
     public enum BOTypes{
-        USER, STUDENT, ROOM
+        USER, STUDENT, ROOM,RESERVATION
     }
     public <T extends SuperBo>T getBo(BOTypes types){
         switch (types){

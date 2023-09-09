@@ -15,7 +15,7 @@ public class DAOFactory {
     }
 
     public enum DAOTypes{
-        USER, STUDENT, ROOM
+        USER, STUDENT, ROOM,RESERVATIONDAO
     }
 
     public <T extends SuperDAO>T getDAO(DAOTypes types){

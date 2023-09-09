@@ -7,87 +7,88 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="762.0" prefWidth="1027.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controllers.ReservationFormController">
+<AnchorPane prefHeight="762.0" prefWidth="1027.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.orm.hibernate.controller.ReservationFormController">
    <children>
-      <DatePicker layoutX="727.0" layoutY="187.0" prefHeight="25.0" prefWidth="296.0" style="-fx-background-color: tranceparent;" AnchorPane.rightAnchor="68.572" />
-      <TextField fx:id="roomIdTxt" layoutX="504.0" layoutY="239.0" onAction="#roomIdTxtOnAction" prefHeight="45.0" prefWidth="143.0" style="-fx-background-color: tranceparent;">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </TextField>
-      <Text fx:id="stNameTxt" layoutX="245.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hello">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Text>
-      <Text fx:id="rmTypeTxt" layoutX="764.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="type">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Text>
-      <Text fx:id="kMnyTxt" layoutX="210.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hi">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Text>
-      <TableView fx:id="resTbl" layoutX="39.0" layoutY="484.0" prefHeight="210.0" prefWidth="959.0" stylesheets="@../../../../../../../../../../../dewmith-hostel/d24-hostel/d24_hostel/src/main/resources/styles/tblStyle.css">
+      <TableView fx:id="resTbl" layoutX="39.0" layoutY="484.0" prefHeight="210.0" prefWidth="959.0" stylesheets="@assests/css/tblStyle.css">
          <columns>
             <TableColumn fx:id="reIdColm" minWidth="0.0" prefWidth="105.0" text="Reservation ID" />
             <TableColumn fx:id="stIdColm" prefWidth="105.0" text="Student ID" />
             <TableColumn fx:id="rmColm" prefWidth="105.0" text="Room ID" />
-            <TableColumn fx:id="stNameColm" prefWidth="200.0" text="Student Name" />
-            <TableColumn fx:id="dateColm" prefWidth="190.0" text="Date" />
-            <TableColumn fx:id="kyMoneyColm" prefWidth="140.0" text="Key Money" />
-            <TableColumn fx:id="stsColm" prefWidth="113.0" text="Status" />
+            <TableColumn fx:id="stNameColm" prefWidth="132.88970947265625" text="Student Name" />
+            <TableColumn fx:id="kyMoneyColm" prefWidth="123.7796630859375" text="Key Money" />
+            <TableColumn fx:id="dateColm" prefWidth="138.6148681640625" text="Date" />
+            <TableColumn fx:id="epireDtColm" prefWidth="122.274169921875" text="Expire Date" />
+            <TableColumn fx:id="stsColm" prefWidth="121.93359375" text="Status" />
          </columns>
       </TableView>
-      <ComboBox fx:id="stsCmb" layoutX="775.0" layoutY="265.0" prefHeight="25.0" prefWidth="222.0" />
-      <ComboBox fx:id="rmIdCmb" layoutX="464.0" layoutY="266.0" onAction="#rmIdCmbOnAction" prefHeight="25.0" prefWidth="200.0" />
-      <ComboBox fx:id="idCmb" layoutX="157.0" layoutY="266.0" onAction="#idCmbOnAction" prefHeight="25.0" prefWidth="173.0" />
-      <Label layoutX="67.0" layoutY="268.0" text="Student ID">
+      <Label layoutX="363.0" layoutY="247.0" text="Room ID :">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <JFXTextField labelFloat="true" layoutX="123.0" layoutY="173.0" promptText="ID" />
-      <Label layoutX="381.0" layoutY="267.0" text="Room ID">
+      <Label layoutX="67.0" layoutY="311.0" text="Student Name :">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="704.0" layoutY="268.0" text="Status">
+      <Button fx:id="addBtn" layoutX="588.0" layoutY="427.0" mnemonicParsing="false" onAction="#addNewBtnOnAction" stylesheets="@assests/css/style.css" text="+" />
+      <Button fx:id="svBtn" layoutX="661.0" layoutY="427.0" mnemonicParsing="false" onAction="#svBtnOnAction" stylesheets="@assests/css/style.css" text="Save" />
+      <Button fx:id="upBtn" layoutX="766.0" layoutY="427.0" mnemonicParsing="false" onAction="#upBtnOnAction" stylesheets="@assests/css/style.css" text="Update" />
+      <Button fx:id="deleteBtn" layoutX="865.0" layoutY="429.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" stylesheets="@assests/css/style.css" text="Delete" />
+      <Label layoutX="70.0" layoutY="248.0" text="Student ID">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="609.0" layoutY="191.0" text="Date">
+      <Label layoutX="675.0" layoutY="193.0" text="Date :">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="67.0" layoutY="341.0" text="Student Name :">
+      <Label layoutX="70.0" layoutY="370.0" text="Key Money :">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="73.0" layoutY="417.0" text="Key Money :">
+      <JFXTextField fx:id="idTxt" labelFloat="true" layoutX="72.0" layoutY="180.0" text="ID :" />
+      <JFXTextField fx:id="searchTxt" labelFloat="true" layoutX="649.0" layoutY="52.0" onAction="#searchTxtOnAction" text="Reservesion ID ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <Button fx:id="searchBtn" layoutX="844.0" layoutY="58.0" mnemonicParsing="false" onAction="#searchBtnOnAction" text="Button" />
+      <Label layoutX="675.0" layoutY="253.0" text="Status :">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="593.0" layoutY="347.0" text="Room Type :">
+      <DatePicker fx:id="dtPicketr" layoutX="745.0" layoutY="189.0" />
+      <ComboBox fx:id="stsCmb" layoutX="767.0" layoutY="246.0" prefWidth="150.0" />
+      <ComboBox fx:id="rmIdCmb" layoutX="463.0" layoutY="249.0" onAction="#rmIdCmbOnAction" prefWidth="150.0" />
+      <ComboBox fx:id="idCmb" layoutX="174.0" layoutY="243.0" onAction="#idCmbOnAction" prefWidth="150.0" />
+      <Label layoutX="623.0" layoutY="315.0" text="Room Tyoe :">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Button layoutX="588.0" layoutY="427.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="+" />
-      <Button layoutX="661.0" layoutY="427.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="Save" />
-      <Button layoutX="766.0" layoutY="427.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="Update" />
-      <Button layoutX="865.0" layoutY="429.0" mnemonicParsing="false" stylesheets="@assests/css/style.css" text="Delete" />
+      <Text fx:id="stNameTxt" layoutX="207.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="kMnyTxt" layoutX="177.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="rmTypeTxt" layoutX="737.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
