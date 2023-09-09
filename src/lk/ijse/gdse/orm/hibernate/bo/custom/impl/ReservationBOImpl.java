@@ -62,7 +62,7 @@ public class ReservationBOImpl implements ReservationBO {
                 student.getId(),
                 student.getName(),
                 student.getAddress(),
-                student.getContact(),
+                student.getContact_num(),
                 student.getDob(),
                 student.getGender()
         );
