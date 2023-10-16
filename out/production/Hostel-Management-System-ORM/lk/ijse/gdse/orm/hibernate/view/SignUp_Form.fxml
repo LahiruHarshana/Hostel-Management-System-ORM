@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="signUpPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="832.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.orm.hibernate.controller.SignUpFormController">
    <children>
       <ImageView fitHeight="832.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -54,7 +54,7 @@
                   <Font name="Arial Black" size="40.0" />
                </font>
             </Label>
-            <TextField fx:id="txtName" layoutX="699.0" layoutY="216.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
+            <TextField fx:id="userNameTxt" layoutX="699.0" layoutY="216.0" onAction="#userNameTxtOnAction" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
             <Label layoutX="703.0" layoutY="184.0" text="User Name" textFill="#888888">
                <font>
                   <Font size="18.0" />
@@ -70,7 +70,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <JFXButton fx:id="btnBack" layoutX="1000.0" layoutY="16.0" onAction="#btnBackOnAction" prefHeight="79.0" prefWidth="76.0" stylesheets="@assests/css/backButton.css" textFill="TRANSPARENT">
+            <JFXButton fx:id="btnBack" layoutX="1000.0" layoutY="16.0" onAction="#backBtnOnAction" prefHeight="79.0" prefWidth="76.0" stylesheets="@assests/css/backButton.css" textFill="TRANSPARENT">
                <graphic>
                   <ImageView fitHeight="69.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -81,9 +81,9 @@
             </JFXButton>
          </children>
       </Pane>
-      <PasswordField fx:id="txtPswd" layoutX="778.0" layoutY="393.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
-      <PasswordField fx:id="txtRpswd" layoutX="778.0" layoutY="493.0" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
-      <JFXButton fx:id="btnSignUp" buttonType="RAISED" layoutX="820.0" layoutY="581.0" onAction="#btnSignUpOnAction" prefHeight="45.0" prefWidth="211.0" style="-fx-background-color: #162851; -fx-background-radius: 10;" text="Sign Up" textFill="WHITE">
+      <PasswordField fx:id="pwTxt" layoutX="778.0" layoutY="393.0" onAction="#pwTxtOnAction" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
+      <PasswordField fx:id="rePwTxt" layoutX="778.0" layoutY="493.0" onAction="#rePwTxtOnAction" prefHeight="49.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: #888888; -fx-border-radius: 8;" />
+      <JFXButton fx:id="signInBtn" buttonType="RAISED" layoutX="820.0" layoutY="581.0" onAction="#signInBtnOnAction" prefHeight="45.0" prefWidth="211.0" style="-fx-background-color: #162851; -fx-background-radius: 10;" text="Sign Up" textFill="WHITE">
          <font>
             <Font size="20.0" />
          </font>

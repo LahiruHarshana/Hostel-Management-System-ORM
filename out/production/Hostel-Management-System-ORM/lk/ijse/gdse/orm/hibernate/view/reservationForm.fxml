@@ -7,21 +7,25 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="762.0" prefWidth="1027.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.orm.hibernate.controller.ReservationFormController">
+<AnchorPane prefHeight="832.0" prefWidth="935.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.orm.hibernate.controller.ReservationFormController">
    <children>
-      <TableView fx:id="resTbl" layoutX="39.0" layoutY="484.0" prefHeight="210.0" prefWidth="959.0">
+      <TableView fx:id="resTbl" layoutX="39.0" layoutY="484.0" prefHeight="314.0" prefWidth="882.0" stylesheets="@assests/css/tblStyle.css">
          <columns>
             <TableColumn fx:id="reIdColm" minWidth="0.0" prefWidth="105.0" text="Reservation ID" />
-            <TableColumn fx:id="stIdColm" prefWidth="105.0" text="Student ID" />
-            <TableColumn fx:id="rmColm" prefWidth="105.0" text="Room ID" />
-            <TableColumn fx:id="stNameColm" prefWidth="132.88970947265625" text="Student Name" />
-            <TableColumn fx:id="kyMoneyColm" prefWidth="123.7796630859375" text="Key Money" />
-            <TableColumn fx:id="dateColm" prefWidth="138.6148681640625" text="Date" />
-            <TableColumn fx:id="epireDtColm" prefWidth="122.274169921875" text="Expire Date" />
-            <TableColumn fx:id="stsColm" prefWidth="121.93359375" text="Status" />
+            <TableColumn fx:id="stIdColm" prefWidth="87.22352600097656" text="Student ID" />
+            <TableColumn fx:id="rmColm" prefWidth="115.09727478027344" text="Room ID" />
+            <TableColumn fx:id="stNameColm" prefWidth="139.9027099609375" text="Student Name" />
+            <TableColumn fx:id="kyMoneyColm" prefWidth="79.57986450195312" text="Key Money" />
+            <TableColumn fx:id="dateColm" prefWidth="102.617431640625" text="Date" />
+            <TableColumn fx:id="epireDtColm" prefWidth="134.61749267578125" text="Expire Date" />
+            <TableColumn fx:id="stsColm" prefWidth="118.46697998046875" text="Status" />
          </columns>
       </TableView>
       <Label layoutX="363.0" layoutY="247.0" text="Room ID :">
@@ -34,12 +38,16 @@
             <Font size="18.0" />
          </font>
       </Label>
+      <Button fx:id="addBtn" layoutX="548.0" layoutY="427.0" mnemonicParsing="false" onAction="#addNewBtnOnAction" stylesheets="@assests/css/style.css" text="+" />
+      <Button fx:id="svBtn" layoutX="621.0" layoutY="427.0" mnemonicParsing="false" onAction="#svBtnOnAction" stylesheets="@assests/css/style.css" text="Save" />
+      <Button fx:id="upBtn" layoutX="726.0" layoutY="427.0" mnemonicParsing="false" onAction="#upBtnOnAction" stylesheets="@assests/css/style.css" text="Update" />
+      <Button fx:id="deleteBtn" layoutX="825.0" layoutY="429.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" stylesheets="@assests/css/style.css" text="Delete" />
       <Label layoutX="70.0" layoutY="248.0" text="Student ID">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="675.0" layoutY="193.0" text="Date :">
+      <Label layoutX="595.0" layoutY="173.0" text="Date :">
          <font>
             <Font size="18.0" />
          </font>
@@ -49,21 +57,53 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="idTxt" layoutX="72.0" layoutY="180.0" text="ID :" />
-      <Button fx:id="searchBtn" layoutX="844.0" layoutY="58.0" mnemonicParsing="false" onAction="#searchBtnOnAction" text="Button" />
+      <JFXTextField fx:id="idTxt" labelFloat="true" layoutX="72.0" layoutY="180.0" promptText="ID :" />
+      <JFXTextField fx:id="searchTxt" labelFloat="true" layoutX="649.0" layoutY="52.0" onAction="#searchTxtOnAction" promptText="Reservesion ID ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <Button fx:id="searchBtn" layoutX="844.0" layoutY="58.0" mnemonicParsing="false" onAction="#searchBtnOnAction" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/icons8-search-64.png" />
+               </image></ImageView>
+         </graphic></Button>
       <Label layoutX="675.0" layoutY="253.0" text="Status :">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <DatePicker fx:id="dtPicketr" layoutX="745.0" layoutY="189.0" />
-      <ComboBox fx:id="stsCmb" layoutX="767.0" layoutY="246.0" prefWidth="150.0" />
-      <ComboBox fx:id="rmIdCmb" layoutX="463.0" layoutY="249.0" onAction="#rmIdCmbOnAction" prefWidth="150.0" />
-      <ComboBox fx:id="idCmb" layoutX="174.0" layoutY="243.0" onAction="#idCmbOnAction" prefWidth="150.0" />
+      <DatePicker fx:id="dtPicketr" layoutX="649.0" layoutY="166.0" />
+      <ComboBox fx:id="stsCmb" layoutX="752.0" layoutY="247.0" prefWidth="150.0" stylesheets="@assests/css/cmbStyle.css" />
+      <ComboBox fx:id="rmIdCmb" layoutX="463.0" layoutY="249.0" onAction="#rmIdCmbOnAction" prefWidth="150.0" stylesheets="@assests/css/cmbStyle.css" />
+      <ComboBox fx:id="idCmb" layoutX="174.0" layoutY="243.0" onAction="#idCmbOnAction" prefWidth="150.0" stylesheets="@assests/css/cmbStyle.css" />
       <Label layoutX="623.0" layoutY="315.0" text="Room Tyoe :">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
+      <Text fx:id="stNameTxt" layoutX="207.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="kMnyTxt" layoutX="177.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="rmTypeTxt" layoutX="737.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="63.0" layoutY="9.0" text="RESERVATION" textFill="#648696">
+         <font>
+            <Font name="Arial Black" size="50.0" />
+         </font>
+      </Label>
+      <Line endX="396.01171875" layoutX="532.0" layoutY="29.0" startX="-69.0" startY="-1.9073486328125E-5" stroke="#648696" strokeWidth="2.0" />
    </children>
 </AnchorPane>

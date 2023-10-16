@@ -25,7 +25,7 @@ public class StudentBOImpl implements StudentBO {
                     student.getId(),
                     student.getName(),
                     student.getAddress(),
-                    student.getContact_num(),
+                    student.getContact(),
                     student.getDob(),
                     student.getGender())
             );
@@ -65,7 +65,7 @@ public class StudentBOImpl implements StudentBO {
                     student.getId(),
                     student.getName(),
                     student.getAddress(),
-                    student.getContact_num(),
+                    student.getContact(),
                     student.getDob(),
                     student.getGender()
             );

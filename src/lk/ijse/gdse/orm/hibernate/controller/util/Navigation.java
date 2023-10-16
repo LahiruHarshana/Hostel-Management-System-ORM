@@ -16,7 +16,7 @@ public class Navigation {
         switch (rout) {
             case LOGIN : initUi("loginPageForm.fxml");
             break;
-            case SIGN_UP : initUi("signUpForm.fxml");
+            case SIGN_UP : initUi("SignUp_Form.fxml");
             break;
             case DASH_BOARD : initUi("dashBoardForm.fxml");
             break;

@@ -1,6 +1,5 @@
 package lk.ijse.gdse.orm.hibernate.bo.custom.impl;
 
-
 import lk.ijse.gdse.orm.hibernate.bo.custom.UserBo;
 import lk.ijse.gdse.orm.hibernate.dao.DAOFactory;
 import lk.ijse.gdse.orm.hibernate.dao.custom.UserDAO;
@@ -18,8 +17,21 @@ public class UserBoImpl implements UserBo {
     }
 
     @Override
-    public boolean getUser(UserDTO userDTO) {
+    public UserDTO getUser(UserDTO userDTO) {
         User user= userDAO.getItem(userDTO.getUserName());
-        return user != null;
+        if (user.getUsrName().equals(userDTO.getUserName())){
+            return new UserDTO(user.getUsrName(),user.getPassword()) ;
+        }
+        else {
+            return null;
+        }
+    }
+
+    @Override
+    public boolean uptdUsr(UserDTO userDTO) {
+        return userDAO.update(new User(
+                userDTO.getUserName(),
+                userDTO.getPassword()
+        ));
     }
 }

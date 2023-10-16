@@ -9,12 +9,17 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import lk.ijse.gdse.orm.hibernate.bo.BoFactory;
 import lk.ijse.gdse.orm.hibernate.bo.custom.StudentBO;
 import lk.ijse.gdse.orm.hibernate.controller.util.CustomAlert;
+import lk.ijse.gdse.orm.hibernate.controller.util.Validation;
 import lk.ijse.gdse.orm.hibernate.dto.StudentDTO;
 import lk.ijse.gdse.orm.hibernate.dto.tm.StudentTM;
 
 import java.sql.Date;
+import java.util.List;
 
 public class StdFormController {
+
+    @FXML
+    private ComboBox<String> genCmb;
     @FXML
     private Button addBtn1;
 
@@ -76,11 +81,15 @@ public class StdFormController {
 
     private final StudentBO studentBO= BoFactory.getInstance().getBo(BoFactory.BOTypes.STUDENT);
 
+    boolean id, name, gen, dob, contact, address;
+
+
     @FXML
     void initialize(){
         initUi();
         setCellValueFactory();
         fillTable();
+        setValueGeneration();
     }
 
 
@@ -112,13 +121,11 @@ public class StdFormController {
     private void initUi(){
         idTxt.clear();
         nameTxt.clear();
-        genTxt.clear();
         dobPicker.setValue(null);
         contactTxt.clear();
         addressTxt.clear();
         idTxt.setDisable(true);
         nameTxt.setDisable(true);
-        genTxt.setDisable(true);
         dobPicker.setDisable(true);
         contactTxt.setDisable(true);
         addressTxt.setDisable(true);
@@ -127,11 +134,14 @@ public class StdFormController {
         svBtn.setDisable(true);
     }
 
+    private void setValueGeneration() {
+        genCmb.getItems().setAll("Male", "Female", "Potato");
+    }
     @FXML
     void addNewBtnOnAction(ActionEvent event) {
         idTxt.setDisable(false);
         nameTxt.setDisable(false);
-        genTxt.setDisable(false);
+        genCmb.setDisable(false);
         dobPicker.setDisable(false);
         contactTxt.setDisable(false);
         addressTxt.setDisable(false);
@@ -152,7 +162,7 @@ public class StdFormController {
 
     @FXML
     void upBtnOnAction(ActionEvent event) {
-        if (studentBO.updateStd(new StudentDTO(idTxt.getText(),nameTxt.getText(),addressTxt.getText(),contactTxt.getText(), Date.valueOf(dobPicker.getValue()),genTxt.getText()))){
+        if (studentBO.updateStd(new StudentDTO(idTxt.getText(),nameTxt.getText(),addressTxt.getText(),contactTxt.getText(), Date.valueOf(dobPicker.getValue()),genCmb.getValue()))){
             new CustomAlert(Alert.AlertType.CONFIRMATION,"Update ","Updated !","Student Update successful !").show();
             fillTable();
             initUi();
@@ -163,7 +173,7 @@ public class StdFormController {
 
     @FXML
     void svBtnOnAction(ActionEvent event) {
-        if (studentBO.saveStd(new StudentDTO(idTxt.getText(),nameTxt.getText(),addressTxt.getText(),contactTxt.getText(),Date.valueOf(dobPicker.getValue()),genTxt.getText()))){
+        if (studentBO.saveStd(new StudentDTO(idTxt.getText(),nameTxt.getText(),addressTxt.getText(),contactTxt.getText(),Date.valueOf(dobPicker.getValue()),genCmb.getValue()))){
             new CustomAlert(Alert.AlertType.CONFIRMATION,"Update ","Updated !","Student Update successful !").show();
             fillTable();
             initUi();
@@ -182,7 +192,7 @@ public class StdFormController {
             deleteBtn.setDisable(false);
             idTxt.setDisable(true);
             nameTxt.setDisable(false);
-            genTxt.setDisable(false);
+            genCmb.setDisable(false);
             dobPicker.setDisable(false);
             contactTxt.setDisable(false);
             addressTxt.setDisable(false);
@@ -190,7 +200,7 @@ public class StdFormController {
 
             idTxt.setText(studentDTO.getsId());
             nameTxt.setText(studentDTO.getName());
-            genTxt.setText(studentDTO.getGen());
+            genCmb.getSelectionModel().select(getCmbIndex(genCmb, studentDTO.getGen()));
             dobPicker.setValue(studentDTO.getDob().toLocalDate());
             contactTxt.setText(studentDTO.getContact());
             addressTxt.setText(studentDTO.getAddress());
@@ -198,6 +208,35 @@ public class StdFormController {
             new CustomAlert(Alert.AlertType.ERROR,"Error ","Invalid","Invalid student id !").show();
         }
         searchTxt.clear();
+    }
+
+    int getCmbIndex(ComboBox<String> cmb, String value) {
+        List<String> cmbList = cmb.getItems();
+        for (int i = 0; i < cmbList.size(); i++) {
+            if (cmbList.get(i).equals(value)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+    private boolean validate() {
+        id = false;
+        name = false;
+        gen = false;
+        dob = false;
+        contact = false;
+        address = false;
+        id = Validation.txtValidation(idTxt);
+        name = Validation.txtValidation(nameTxt);
+        gen = Validation.comboValidation(genCmb);
+        dob = Validation.dateValidation(dobPicker);
+        contact = Validation.txtValidation(contactTxt);
+        address = Validation.txtValidation(addressTxt);
+        contact = Validation.cNumValidation(contactTxt);
+        if (id && name && gen && dob && contact && address) {
+            return true;
+        }
+        return false;
     }
 
 }

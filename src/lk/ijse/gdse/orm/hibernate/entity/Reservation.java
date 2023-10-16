@@ -1,6 +1,5 @@
 package lk.ijse.gdse.orm.hibernate.entity;
 
-
 import javax.persistence.*;
 import java.sql.Date;
 @Entity
@@ -28,9 +27,6 @@ public class Reservation {
         this.status = status;
         this.student = student;
         this.room = room;
-    }
-
-    public Reservation() {
     }
 
     public String getId() {
@@ -71,6 +67,9 @@ public class Reservation {
 
     public void setRoom(Room room) {
         this.room = room;
+    }
+
+    public Reservation() {
     }
 
     @Override

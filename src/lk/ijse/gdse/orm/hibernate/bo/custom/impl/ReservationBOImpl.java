@@ -13,7 +13,6 @@ import lk.ijse.gdse.orm.hibernate.dto.StudentDTO;
 import lk.ijse.gdse.orm.hibernate.entity.Reservation;
 import lk.ijse.gdse.orm.hibernate.entity.Room;
 import lk.ijse.gdse.orm.hibernate.entity.Student;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -63,7 +62,7 @@ public class ReservationBOImpl implements ReservationBO {
                 student.getId(),
                 student.getName(),
                 student.getAddress(),
-                student.getContact_num(),
+                student.getContact(),
                 student.getDob(),
                 student.getGender()
         );

@@ -1,88 +1,104 @@
 package lk.ijse.gdse.orm.hibernate.entity;
 
+
 import javax.persistence.*;
-import java.sql.Date;
 import java.util.ArrayList;
+import java.sql.Date;
 import java.util.List;
+
 
 @Entity
 @Table(name = "student")
 public class Student {
     @Id
-    @Column(name = "student_id")
+    @Column(name = "student_id",length = 50)
     private String id;
     @Column(name = "student_name")
     private String name;
-    @Column(name = "student_address")
+    @Column(name = "address")
     private String address;
-    @Column(name = "contact_num")
-    private String contact_num;
+    @Column(name = "student_contact")
+    private String contact;
     @Column(name = "student_dob")
     private Date dob;
     @Column(name = "student_gender")
     private String gender;
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy =  "student")
+    private List<Reservation> reservations = new ArrayList<>();
 
-    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY,mappedBy = "student")
-    List<Reservation> reservations = new ArrayList<>();
-
-    public Student() {
+    public Student(String sId, String name, String address, String contact, Date dob, String gen) {
+        this.name=name;
+        this.id=sId;
+        this.address=address;
+        this.contact=contact;
+        this.dob=dob;
+        this.gender=gen;
     }
 
-    public Student(String id, String name, String address, String contact_num, Date dob, String gender) {
+    public Student(String id, String name, String address, String contact, Date dob, String gender, List<Reservation> reservations) {
         this.id = id;
         this.name = name;
         this.address = address;
-        this.contact_num = contact_num;
+        this.contact = contact;
         this.dob = dob;
         this.gender = gender;
+        this.reservations = reservations;
     }
 
     public String getId() {
         return id;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public String getContact_num() {
-        return contact_num;
-    }
-
-    public Date getDob() {
-        return dob;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
     public void setAddress(String address) {
         this.address = address;
     }
 
-    public void setContact_num(String contact_num) {
-        this.contact_num = contact_num;
+    public String getContact() {
+        return contact;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
+    }
+
+    public Date getDob() {
+        return dob;
     }
 
     public void setDob(Date dob) {
         this.dob = dob;
     }
 
+    public String getGender() {
+        return gender;
+    }
+
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public List<Reservation> getReservations() {
+        return reservations;
+    }
+
+    public void setReservations(List<Reservation> reservations) {
+        this.reservations = reservations;
     }
 
     @Override
@@ -91,9 +107,13 @@ public class Student {
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", address='" + address + '\'' +
-                ", contact_num='" + contact_num + '\'' +
+                ", contact='" + contact + '\'' +
                 ", dob=" + dob +
                 ", gender='" + gender + '\'' +
+                ", reservations=" + reservations +
                 '}';
+    }
+
+    public Student() {
     }
 }

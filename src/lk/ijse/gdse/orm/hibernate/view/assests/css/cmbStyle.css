@@ -1,0 +1,6 @@
+.combo-box{
+    -fx-background-color:tranceparent;
+    -fx-border-color: #162851;
+    -fx-border-width: 2px ;
+    -fx-border-radius: 8;
+}

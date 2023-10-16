@@ -18,18 +18,18 @@
             <Font size="24.0" />
          </font>
       </TextField>
-      <Button layoutX="198.0" layoutY="637.0" mnemonicParsing="false" onAction="#svBtnOAction" prefHeight="29.0" prefWidth="150.0" stylesheets="@assests/css/style.css" text="Save">
+      <Button fx:id="svBtn" layoutX="198.0" layoutY="637.0" mnemonicParsing="false" onAction="#svBtnOAction" prefHeight="29.0" prefWidth="150.0" stylesheets="@assests/css/style.css" text="Save">
          <font>
             <Font size="22.0" />
          </font>
       </Button>
       <Line fx:id="pwLine" endX="291.0" endY="1.32598876953125" layoutX="175.0" layoutY="455.0" startX="-100.0" startY="1.32598876953125" />
-      <PasswordField fx:id="pwTxt" layoutX="75.0" layoutY="411.0" onAction="#pwTxtOnAction" prefHeight="45.0" prefWidth="345.0" promptText="Password" style="-fx-background-color: tranceparent;">
+      <PasswordField fx:id="newPwTxt" layoutX="75.0" layoutY="411.0" onAction="#newPwTxtOnAction" prefHeight="45.0" prefWidth="345.0" promptText="Password" style="-fx-background-color: tranceparent;">
          <font>
             <Font size="21.0" />
          </font>
       </PasswordField>
-      <Button fx:id="pwViewBtn" layoutX="420.0" layoutY="411.0" mnemonicParsing="false" onAction="#pwViewBtnOnAction" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: tranceparent;" stylesheets="@../styles/search.css">
+      <Button fx:id="newPwViewBtn" layoutX="420.0" layoutY="411.0" mnemonicParsing="false" onAction="#newPwViewBtnOnAction" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: tranceparent;" stylesheets="@../styles/search.css">
          <graphic>
             <ImageView fx:id="viewImg" fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -39,12 +39,12 @@
          </graphic>
       </Button>
       <Line fx:id="newPwLine" endX="291.0" endY="1.32598876953125" layoutX="175.0" layoutY="540.0" startX="-100.0" startY="1.32598876953125" />
-      <PasswordField fx:id="newPwTxt" layoutX="75.0" layoutY="496.0" onAction="#newPwTxtOnAction" prefHeight="45.0" prefWidth="345.0" promptText="Password" style="-fx-background-color: tranceparent;">
+      <PasswordField fx:id="reEntrPw" layoutX="75.0" layoutY="496.0" onAction="#reEntrPwOnAction" prefHeight="45.0" prefWidth="345.0" promptText="Password" style="-fx-background-color: tranceparent;">
          <font>
             <Font size="21.0" />
          </font>
       </PasswordField>
-      <Button fx:id="newPwViewBtn" layoutX="420.0" layoutY="496.0" mnemonicParsing="false" onAction="#newPwViewBtnOnAction" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: tranceparent;" stylesheets="@../styles/search.css">
+      <Button fx:id="rPwViewBtn" layoutX="420.0" layoutY="496.0" mnemonicParsing="false" onAction="#rPwViewBtnOnAction" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: tranceparent;" stylesheets="@../styles/search.css">
          <graphic>
             <ImageView fx:id="viewImg1" fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -62,15 +62,16 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="75.0" layoutY="370.0" text="New User Name ">
+      <Label layoutX="75.0" layoutY="370.0" text="New Password ">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="75.0" layoutY="470.0" text="New Password">
+      <Label layoutX="75.0" layoutY="470.0" text="Re Enter New Password">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
+      <Button fx:id="checkBtn" layoutX="333.0" layoutY="308.0" mnemonicParsing="false" onAction="#checkBtnOnActon" stylesheets="@assests/css/style.css" text="Check" textFill="WHITE" />
    </children>
 </AnchorPane>

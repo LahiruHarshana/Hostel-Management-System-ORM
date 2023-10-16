@@ -14,13 +14,13 @@ public class CustomAlert extends Alert {
         String image = null;
         switch (alertType) {
             case ERROR:
-                image = "/assets/close.png";
+                image = "/lk/ijse/gdse/orm/hibernate/view/assests/close.png";
                 break;
             case INFORMATION:
-                image = "/assets/information-button.png";
+                image = "/lk/ijse/gdse/orm/hibernate/view/assests/information-button.png";
                 break;
             case WARNING:
-                image = "/assets/warning.png";
+                image = "/lk/ijse/gdse/orm/hibernate/view/assests/warning.png";
                 break;
         }
         if (image !=null){
