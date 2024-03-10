@@ -33,7 +33,6 @@ public class Room {
         this.qty = qty;
         this.reservations = reservations;
     }
-
     public Room() {
     }
 

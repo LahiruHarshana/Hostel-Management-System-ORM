@@ -48,7 +48,6 @@ public class StudentDAOImpl implements StudentDAO {
             return false;
         }
     }
-
     @Override
     public List<Student> getAll() {
         try (Session session = SessionFactoryConfig.getInstance().getSession()) {
