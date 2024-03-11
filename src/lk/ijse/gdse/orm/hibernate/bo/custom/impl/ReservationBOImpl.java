@@ -1,6 +1,5 @@
 package lk.ijse.gdse.orm.hibernate.bo.custom.impl;
 
-
 import lk.ijse.gdse.orm.hibernate.bo.custom.ReservationBO;
 import lk.ijse.gdse.orm.hibernate.dao.DAOFactory;
 import lk.ijse.gdse.orm.hibernate.dao.custom.QueryDAO;
