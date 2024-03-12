@@ -66,7 +66,6 @@ public class ReservationBOImpl implements ReservationBO {
                 student.getGender()
         );
     }
-
     @Override
     public boolean saveRes(ReservationDTO reservationDTO) {
         Student student = studentDAO.getItem(reservationDTO.getStdId());
