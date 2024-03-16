@@ -83,7 +83,6 @@ public class ReservationBOImpl implements ReservationBO {
         }
         return false;
     }
-
     @Override
     public boolean updateRes(ReservationDTO reservationDTO) {
         Reservation reservation=reservationDAO.getItem(reservationDTO.getResId());
